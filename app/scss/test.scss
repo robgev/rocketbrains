@@ -238,8 +238,6 @@ a {
   margin: 0;
   list-style: none;
   font-size: 0;
-  border: 1px solid $color_mine_shaft_approx;
-  border-left: 0;
   &:after {
     clear: both;
     display: table;
@@ -3679,8 +3677,8 @@ address {
     overflow: hidden;
   }
   .grid__cell {
-    width: 20%;
-    height: 50%;
+    width: calc(100% / 3);
+    height: calc(100vw / 6);
     box-sizing: border-box;
     float: left;
     position: relative;
@@ -3861,8 +3859,8 @@ address {
     overflow: hidden;
   }
   .grid__cell {
-    width: 20%;
-    height: 50%;
+    width: calc(100% / 3);
+    height: calc(100vw / 6);
     box-sizing: border-box;
     float: left;
     position: relative;
@@ -3872,9 +3870,6 @@ address {
       border-left: 1px solid $color_mine_shaft_approx;
       background-size: cover;
       background-position: center center;
-      &:last-child {
-        border-right: 1px solid $color_mine_shaft_approx;
-      }
     }
   }
   .cell__image {

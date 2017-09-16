@@ -1,0 +1,10 @@
+@import './utils/colors';
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  border: 1px solid $color_mine_shaft_approx;
+  border-left: 0;
+}

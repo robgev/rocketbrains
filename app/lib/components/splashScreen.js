@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../scss/splash.scss';
 
-const App = () => (
+const Splash = () => (
   <div className='splash-container'>
     <div className='social'>
       <div>a</div>
@@ -23,4 +23,4 @@ const App = () => (
   </div>
 );
 
-export default App
+export default Splash
