@@ -15,10 +15,13 @@ const config = {
     contentBase: 'public',
     historyApiFallback: true
   },
+  resolve: {
+    extensions: [' ', '.js', '.jsx']
+  },
   module: {
-    loaders: [
+    rules: [
       {
-        test: /\.js?$/,
+        test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
         query: {
@@ -42,8 +45,12 @@ const config = {
       {
         test: /\.css?$/,
         loader: [ 'style-loader', 'css-loader']
-      }
-    ]
+      },
+      {
+        test: /\.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        loader: 'file-loader?name=fonts/[name].[ext]'
+      },
+    ],
   }
 };
 

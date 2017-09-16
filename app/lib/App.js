@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+import React from 'react';
+import Header from './components/header';
+import Splash from './components/splashScreen';
 
-export default
-class App extends Component {
-  render() {
-    return (
-      <div className='container'>
-        Test
-      </div>
-    );
-  }
-};
+const App = () => (
+  <div className='container'>
+    <Header />
+    <Splash />
+  </div>
+);
+
+export default App
