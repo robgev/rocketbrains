@@ -3,9 +3,23 @@ import '../../scss/splash.scss';
 
 const App = () => (
   <div className='splash-container'>
-    <h1 className='company-name'>
-      Rocket Brains
-    </h1>
+    <div className='social'>
+      <div>a</div>
+      <div>a</div>
+      <div>a</div>
+    </div>
+    <div className='company-name centered'>
+      <div className='small-center centered'>
+        <h3 className='splash-text top'> We are </h3>
+        <h1 className='name'>
+          Rocket Brains
+        </h1>
+        <h3 className='splash-text bottom'>
+          { `A full service
+            digital agency` }
+        </h3>
+      </div>
+    </div>
   </div>
 );
 
