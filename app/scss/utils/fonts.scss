@@ -11,3 +11,46 @@ $font_9: monospace;
 $font_10: serif;
 $font_11: klavika-italic;
 $font_12: droid-bold;
+
+@font-face {
+  font-family: $font_0;
+  src: url(./font/icomoon/icomoon.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_1;
+  src: url(./font/klavika/klavikach-regularcond-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_2;
+  src: url(./font/klavika/klavikach-lightcond-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_3;
+  src: url(./font/klavika/klavikach-mediumcond-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_4;
+  src: url(./font/klavika/klavikach-boldcond-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_5;
+  src: url(./font/droid/droidserif-regular-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: $font_6;
+  src: url(./font/droid/droidserif-italic-webfont.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
