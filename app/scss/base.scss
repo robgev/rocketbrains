@@ -78,6 +78,17 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  &:active {
+    outline: 0;
+  }
+  &:hover {
+    outline: 0;
+  }
+}
+
 .centered {
   display: flex;
   justify-content: center;
