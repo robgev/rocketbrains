@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Tile = ({ title, index, toggleMouseOver }) => (
+const Tile = ({ title, index, toggleMouseOver, over }) => (
   <div
     className="grid__cell grid__cell--with-border"
     onMouseEnter={toggleMouseOver}
@@ -12,7 +12,7 @@ const Tile = ({ title, index, toggleMouseOver }) => (
 
       <h1 className="cell__number heading-05">0{index}</h1>
 
-      <h1 className="cell__title heading-05 flicker" style={{opacity: 1}}>{title}</h1>
+      <h1 className="cell__title heading-05 flicker" style={{opacity: over ? 0 : 1}}>{title}</h1>
 
       <div className="cell__line">
         <div className="x top" style={{width: '4.31034%', marginLeft: 0}}></div>

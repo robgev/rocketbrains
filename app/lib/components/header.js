@@ -35,14 +35,17 @@ const topBarItems = [
   'Icon',
 ]
 
-const Header = () => (
-  <header className="main-header logo-hidden">
+const hideLogoThreshold = 19; //px
+const showBottomBorderThreshold = 100; //px
+
+const Header = ({ scrollTop }) => (
+  <header className={`main-header ${scrollTop > hideLogoThreshold ? 'logo-hidden' : ''}`}>
   	<h1 className="main-logo mobile" href="#">
   		<div className="logo-mm">
         <SVG />
       </div>
   	</h1>
-  	<nav className="main-nav sticky" role="navigation">
+  	<nav className={`main-nav ${scrollTop > showBottomBorderThreshold ? 'sticky' : ''}`} role="navigation">
   		<div className="main-side-nav" style={{}}>
   			<div className="head">
   				<span className="icon-cross"></span>

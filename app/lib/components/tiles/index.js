@@ -30,7 +30,13 @@ class Tiles extends PureComponent {
         <div className="component-videos-grid">
           <div className="grid__foreground">
             {tileItems.map((item, idx) => (
-              <Tile title={item} index={idx + 1} key={`${item}-${idx}`} toggleMouseOver={() => this.toggleMouseOver(idx)} />
+              <Tile
+                title={item}
+                index={idx + 1}
+                over={over === idx}
+                key={`${item}-${idx}`}
+                toggleMouseOver={() => this.toggleMouseOver(idx)}
+              />
             ))}
           </div>
 
