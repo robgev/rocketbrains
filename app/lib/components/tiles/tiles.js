@@ -15,12 +15,19 @@ const Tile = ({ title, index, toggleMouseOver, over }) => (
       <h1 className="cell__title heading-05 flicker" style={{opacity: over ? 0 : 1}}>{title}</h1>
 
       <div className="cell__line">
-        <div className="x top" style={{width: '4.31034%', marginLeft: 0}}></div>
-        <div className="y right" style={{height: 0, marginTop: 0}}></div>
-        <div className="x bottom" style={{width: 0, marginRight: 0}}></div>
-        <div className="y left" style={{height: 0, marginBottom: 0}}></div>
+        <div className="x top"></div>
+        <div className="y right"></div>
+        <div className="x bottom"></div>
+        <div className="y left"></div>
       </div>
   </div>
 )
+
+/*
+style={{width: '4.31034%', marginLeft: 0}}
+style={{height: 0, marginTop: 0}}
+style={{width: 0, marginRight: 0}}
+style={{height: 0, marginBottom: 0}}
+*/
 
 export default Tile;

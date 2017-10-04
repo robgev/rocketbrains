@@ -2,7 +2,11 @@
 @import './utils/fonts.scss';
 @import './utils/icons.scss';
 @import './utils/medias.scss';
+@import './utils/keyframes.scss';
 @charset "UTF-8";
+
+$border-animation-time: .15s;
+$border-out-animation-time: $border-animation-time / 2;
 
 .heading-02 {
   text-transform: uppercase;
@@ -637,6 +641,33 @@ table {
       background-size: cover;
       background-position: center center;
     }
+    .left {
+      animation: leftline-reverse $border-out-animation-time;
+    }
+    .bottom {
+      animation: bottomline-reverse $border-out-animation-time $border-out-animation-time / 2 linear;
+    }
+    .right {
+      animation: rightline-reverse $border-out-animation-time $border-out-animation-time linear;
+    }
+    .top {
+      animation: topline-reverse $border-out-animation-time * 2 3 * $border-out-animation-time / 2 ease-out;
+    }
+
+    &:hover {
+      .top {
+        animation: topline 2.25 * $border-animation-time linear;
+      }
+      .right {
+        animation: rightline $border-animation-time $border-animation-time / 2 linear;
+      }
+      .bottom {
+        animation: bottomline $border-animation-time $border-animation-time linear;
+      }
+      .left {
+        animation: leftline $border-animation-time * 2 3 * $border-animation-time / 2 ease-out;
+      }
+    }
   }
   .cell__image {
     height: 100%;
@@ -703,7 +734,7 @@ table {
     vertical-align: middle;
     text-align: center;
     z-index: 1;
-    font-size: 18.2vw;
+    font-size: 14vw;
     position: absolute;
     top: 50%;
     left: 50%;
