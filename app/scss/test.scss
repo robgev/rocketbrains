@@ -137,6 +137,9 @@ table {
     &.active {
       color: $white;
     }
+    &:hover {
+      color: $white;
+    }
   }
   .inverted .main-side-nav ::-webkit-scrollbar-thumb {
     background: $color_alto_approx;
@@ -653,6 +656,9 @@ table {
     .top {
       animation: topline-reverse $border-out-animation-time * 2 3 * $border-out-animation-time / 2 ease-out;
     }
+    .flicker {
+      animation: flick-reverse $border-animation-time * 3.5 ease-in-out;
+    }
 
     &:hover {
       .top {
@@ -666,6 +672,9 @@ table {
       }
       .left {
         animation: leftline $border-animation-time * 2 3 * $border-animation-time / 2 ease-out;
+      }
+      .flicker {
+        animation: flick $border-animation-time * 3.5 linear;
       }
     }
   }

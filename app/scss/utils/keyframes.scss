@@ -66,6 +66,24 @@
   }
 }
 
+@keyframes flick {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes topline-reverse {
   100% {
     width: 15px;
@@ -123,5 +141,38 @@
   0% {
     height: 0;
     margin-bottom: 25%;
+  }
+}
+
+@keyframes flick-reverse {
+  0% {
+    opacity: 0;
+  }
+  11% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  44% {
+    opacity: 0;
+  }
+  55% {
+    opacity: 1;
+  }
+  66% {
+    opacity: 0;
+  }
+  77% {
+    opacity: 1;
+  }
+  88% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -4,9 +4,15 @@ import '../../scss/splash.scss';
 const Splash = () => (
   <div className='splash-container'>
     <div className='social'>
-      <div>a</div>
-      <div>a</div>
-      <div>a</div>
+      <a href="https://www.facebook.com/" target="_blank" className="block-button splash-button">
+        <span className="icn icon-facebook"></span>
+      </a>
+      <a href="https://www.twitter.com/" target="_blank" className="block-button splash-button">
+        <span className="icn icon-twitter"></span>
+      </a>
+      <a href="https://www.instagram.com/" target="_blank" className="block-button splash-button">
+        <span className="icn icon-instagram"></span>
+      </a>
     </div>
     <div className='company-name centered'>
       <div className='small-center centered'>

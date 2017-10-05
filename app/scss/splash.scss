@@ -9,6 +9,11 @@
     width: 30px;
     margin-top: auto;
     padding-left: 15px;
+    .splash-button {
+      height: 40px;
+      display: flex;
+      align-items: flex-end;
+    }
   }
   .company-name {
     flex-grow: 1;
