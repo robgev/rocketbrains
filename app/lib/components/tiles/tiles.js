@@ -4,7 +4,6 @@ const Tile = ({ title, index, toggleMouseOver, over }) => (
   <div
     className="grid__cell grid__cell--with-border"
     onMouseEnter={toggleMouseOver}
-    onMouseLeave={toggleMouseOver}
   >
       <svg className="cell__border">
           <rect x="0" y="0" width="100%" height="100%"></rect>
@@ -12,7 +11,7 @@ const Tile = ({ title, index, toggleMouseOver, over }) => (
 
       <h1 className="cell__number heading-05">0{index}</h1>
 
-      <h1 className="cell__title heading-05 flicker" style={{opacity: over ? 0 : 1}}>{title}</h1>
+      <h1 className="cell__title heading-05 flicker">{title}</h1>
 
       <div className="cell__line">
         <div className="x top"></div>

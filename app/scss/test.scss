@@ -674,7 +674,8 @@ table {
         animation: leftline $border-animation-time * 2 3 * $border-animation-time / 2 ease-out;
       }
       .flicker {
-        animation: flick $border-animation-time * 3.5 linear;
+        animation: flick $border-animation-time * 1.5 linear;
+        opacity: 0;
       }
     }
   }
