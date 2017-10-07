@@ -21,7 +21,8 @@ class App extends PureComponent {
   }
 
   handleScroll = () => {
-    this.setState({ scrollTop: document.body.scrollTop });
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    this.setState({ scrollTop });
   }
 
   render() {
