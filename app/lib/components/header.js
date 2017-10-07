@@ -1,5 +1,6 @@
 import React from 'react';
-import SVG from './logo';
+import SVG from '../assets/logo';
+import Globe from '../assets/language';
 
 import '../../scss/header.scss';
 
@@ -18,7 +19,6 @@ const topBarItems = [
   'Careers',
   'Contacts',
   'Blog',
-  'Icon',
 ]
 
 const hideLogoThreshold = 19; //px
@@ -32,7 +32,7 @@ const Header = ({ scrollTop }) => (
       </div>
   	</h1>
   	<nav className={`main-nav ${scrollTop > showBottomBorderThreshold ? 'sticky' : ''}`} role="navigation">
-  		<div className="main-side-nav" style={{}}>
+  		<div className="main-side-nav">
   			<div className="head">
   				<span className="icon-cross"></span>
   				<h1 className="main-logo" href="#">
@@ -60,6 +60,11 @@ const Header = ({ scrollTop }) => (
   					{topBarItems.map((item, idx) => (
               <li key={`MainMenuItem-${idx}`}><a href="#">{item}</a></li>
             ))}
+            <li>
+              <a href="#">
+                <Globe />
+              </a>
+            </li>
   				</ul>
 
   			<div className="scroll-menu-wrap">

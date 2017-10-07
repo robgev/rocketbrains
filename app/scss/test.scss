@@ -120,6 +120,7 @@ table {
     }
   }
   li {
+    vertical-align: middle;
     text-transform: uppercase;
     letter-spacing: 2px;
     display: inline-block;
@@ -132,6 +133,9 @@ table {
     display: none;
   }
   a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     color: $color_storm_dust_approx;
     transition: color 150ms ease-out;
     &.active {
@@ -139,6 +143,9 @@ table {
     }
     &:hover {
       color: $white;
+      .cls-3 {
+        fill: $white;
+      }
     }
   }
   .inverted .main-side-nav ::-webkit-scrollbar-thumb {
