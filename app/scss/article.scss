@@ -1,0 +1,1003 @@
+@import './utils/colors.scss';
+@import './utils/fonts.scss';
+@charset "UTF-8";
+
+.case-content-wrap {
+  max-width: 880px;
+  padding: 108px 80px;
+  margin: 0 auto;
+  &:after {
+    clear: both;
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:before {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &.box-sizing {
+    box-sizing: border-box;
+    max-width: 1040px;
+  }
+}
+.inverted {
+  color: $color_rangoon_green_approx;
+  .heading-02 {
+    color: $color_rangoon_green_approx;
+  }
+  .heading-05 {
+    color: $color_rangoon_green_approx;
+  }
+  .block-button {
+    .bg {
+      background-color: $color_rangoon_green_approx;
+    }
+    .text {
+      font-family: $font_1, $font_7, $font_8;
+      color: $color_storm_dust_approx!important;
+    }
+  }
+  .block-squared-list {
+    border-color: $color_alto_approx;
+  }
+  .block-item {
+    .block-button {
+      border-color: $color_alto_approx;
+      color: $color_celeste_approx;
+    }
+    a {
+      border-color: $color_alto_approx;
+      color: $color_celeste_approx;
+    }
+  }
+  .apply-form {
+    border-top-color: $color_alto_approx;
+    .inp-placeholder {
+      font-family: $font_3, $font_7, $font_8;
+      color: $color_mine_shaft_approx;
+    }
+    ::-webkit-input-placeholder {
+      font-family: $font_3, $font_7, $font_8;
+      color: $color_mine_shaft_approx;
+    }
+    :-moz-placeholder {
+      font-family: $font_3, $font_7, $font_8;
+      color: $color_mine_shaft_approx;
+    }
+    :-ms-placeholder {
+      font-family: $font_3, $font_7, $font_8;
+      color: $color_mine_shaft_approx;
+    }
+    :-o-placeholder {
+      font-family: $font_3, $font_7, $font_8;
+      color: $color_mine_shaft_approx;
+    }
+    :placeholder {
+      font-family: $font_3, $font_7, $font_8;
+      color: $color_mine_shaft_approx;
+    }
+    .input-row {
+      border-top-color: $color_alto_approx;
+    }
+    .submit {
+      border-top-color: $color_alto_approx;
+    }
+    label {
+      color: $color_rangoon_green_approx;
+    }
+    button {
+      background: $color_rangoon_green_approx;
+      .text {
+        color: $white;
+      }
+    }
+    .attach-file {
+      border-color: $color_alto_approx;
+      color: $color_celeste_approx;
+    }
+    .input-wrapper ::-webkit-scrollbar-thumb {
+      background: $color_alto_approx;
+    }
+  }
+  .case-text .content h3 {
+    color: $color_rangoon_green_approx;
+  }
+}
+@media screen and(max-width:960px) {
+  .apply-form {
+    .col-fields {
+      width: auto;
+      float: none;
+      padding-left: 60px;
+      padding-bottom: 40px;
+    }
+    .col-info {
+      width: auto;
+      float: none;
+      padding-bottom: 80px;
+    }
+    .apply-button {
+      margin-top: 0;
+    }
+    label {
+      box-sizing: border-box;
+      padding-left: 30px;
+    }
+    .field {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .attach-file {
+      left: 0;
+      border-left: 0;
+    }
+  }
+  .masthead-item {
+    height: 398px;
+  }
+  .case-intro .content p {
+    font-size: 19px;
+    line-height: 1.7368;
+  }
+  .case-text .content p {
+    font-size: 19px;
+    line-height: 1.7368;
+  }
+  .inverted .apply-form .col-fields {
+    border-top-color: $color_alto_approx;
+  }
+}
+.case-text {
+  padding-top: 104px;
+  .content {
+    h3 {
+      font: 400 22px/1.8 klavika-medium, Arial, sans-serif;
+      color: $white;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0;
+      margin-bottom: 40px;
+    }
+    p {
+      font: 400 21px/1.6667 droid, Arial, sans-serif;
+      color: $color_storm_dust_approx;
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.85;
+      margin-top: 36px;
+      b {
+        color: $color_mine_shaft_approx;
+        font-family: $font_12, $font_7, $font_8;
+        font-weight: 400;
+      }
+      strong {
+        color: $color_mine_shaft_approx;
+        font-family: $font_12, $font_7, $font_8;
+        font-weight: 400;
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    .inverted h3 {
+      color: $color_rangoon_green_approx;
+    }
+  }
+  .columns {
+    column-count: 2;
+    column-gap: 50px;
+  }
+}
+
+@media screen and(max-width:640px) {
+  .apply-form {
+    label {
+      display: block;
+      max-width: none;
+      float: none;
+      width: auto;
+      height: auto;
+      line-height: 1;
+      padding-top: 14px;
+    }
+    .col-info {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .col-fields {
+      padding-left: 20px;
+    }
+    .field {
+      height: 55px;
+      padding-top: 18px;
+      padding-bottom: 17px;
+    }
+    .textarea {
+      height: 180px;
+    }
+  }
+  .masthead-item {
+    height: 318px;
+    .content {
+      left: 0;
+      right: 0;
+      bottom: 120px;
+      text-align: center;
+    }
+  }
+  .case-content-wrap {
+    padding: 54px 20px;
+  }
+  .case-intro {
+    padding-top: 36px;
+    padding-bottom: 53px;
+    .case-name {
+      margin-bottom: 35px;
+    }
+    .tags {
+      margin-top: 28px;
+    }
+    .clientname {
+      margin-bottom: 28px;
+    }
+    .content p {
+      font-size: 17px;
+      line-height: 1.6;
+    }
+  }
+  .case-text {
+    padding-top: 44px;
+    .content {
+      p {
+        font-size: 17px;
+        line-height: 1.6;
+        margin-top: 18px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+      h3 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .case-quote {
+    padding-bottom: 42px;
+    margin-left: 20px;
+    .quote {
+      margin-bottom: 22px;
+    }
+  }
+  .case-closing-elements {
+    display: none;
+  }
+  .social-share-case {
+    display: none;
+  }
+  .static-page .case-intro {
+    padding-top: 40px;
+  }
+  .case-image figcaption {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 22px;
+  }
+}
+.case-intro {
+  padding-top: 72px;
+  padding-bottom: 113px;
+  &.no-vertical-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .case-name {
+    margin-bottom: 71px;
+  }
+  .tags {
+    margin-top: 57px;
+    visibility: hidden;
+  }
+  .clientname {
+    margin-bottom: 55px;
+  }
+  .content p {
+    font: 400 21px/1.6667 droid, Arial, sans-serif;
+    color: $color_storm_dust_approx;
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.85;
+    margin-top: 37px;
+    b {
+      color: $color_mine_shaft_approx;
+      font-family: $font_12, $font_7, $font_8;
+      font-weight: 400;
+    }
+    strong {
+      color: $color_mine_shaft_approx;
+      font-family: $font_12, $font_7, $font_8;
+      font-weight: 400;
+    }
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+.block-button {
+  position: relative;
+  display: inline-block;
+  height: 80px;
+  box-sizing: border-box;
+  .text {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: table-cell;
+    height: 80px;
+    vertical-align: middle;
+    padding: 0 32px 2px;
+    font: 400 18px/.8 klavika-bold, Arial, sans-serif;
+    color: $white;
+    white-space: nowrap;
+    box-sizing: border-box;
+    &.text-regular {
+      font-family: $font_1, $font_7, $font_8;
+      .text-change {
+        display: block;
+        padding-top: 12px;
+        font-style: normal;
+        font-family: $font_5, $font_7, $font_8;
+        font-size: 15px;
+        color: $color_mountain_mist_approx;
+        text-transform: capitalize;
+        letter-spacing: 0;
+      }
+    }
+  }
+  .bg {
+    position: absolute;
+    top: 12px;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    display: block;
+    background-color: $white;
+    visibility: hidden;
+    transition: all 50ms ease-in-out;
+    opacity: .5;
+  }
+  .icn {
+    position: relative;
+    transition: color .1s ease-out;
+  }
+  &.text-bordered {
+    border: 2px solid $white;
+  }
+  &.text-filled {
+    background: $color_rangoon_green_approx;
+    .text {
+      color: $white;
+    }
+  }
+}
+.button-full-bordered {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: block;
+  text-align: center;
+  border-bottom: 1px solid $color_mine_shaft_approx;
+  font: 400 18px/1 klavika, Arial, sans-serif;
+  line-height: 79px;
+  color: $white;
+  height: 79px;
+  transition: background-color 80ms ease-out;
+}
+
+@media screen and(min-width:641px) {
+  .block-button {
+    &:hover {
+      .bg {
+        display: block;
+        visibility: visible;
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+        opacity: 1;
+        transition: all 70ms ease-in-out;
+      }
+      .icn {
+        color: $white;
+      }
+      .text {
+        color: $color_rangoon_green_approx;
+      }
+    }
+    &.text-filled {
+      &:hover .bg {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      &:hover .text {
+        color: $white;
+      }
+    }
+    &:hover {
+      z-index: 1;
+    }
+  }
+  .right-fly-in {
+    .all-case-list a:hover {
+      color: $white;
+      background-color: $color_log_cabin_approx;
+    }
+    .filter-list a:hover {
+      color: $white;
+    }
+  }
+  .case-block {
+    &:hover {
+      .case-title {
+        color: $color_storm_dust_approx;
+      }
+      .image-wrapper img {
+        transform: scale(1.1);
+        //Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+        transition-duration: 5s;
+      }
+    }
+    &:hover .content {
+      height: 180px;
+      background: $white;
+    }
+  }
+  .teamlead-block {
+    &:hover {
+      .content {
+        height: 340px;
+        background: $white;
+        //Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+        transition-duration: 150ms;
+      }
+      .heading-italic {
+        color: $color_rangoon_green_approx;
+      }
+      .copy-jobtitle {
+        opacity: 0;
+      }
+      .teamlead-title {
+        opacity: 0;
+      }
+      .teamlead-email {
+        max-height: 20px;
+      }
+    }
+    &:hover .image-wrapper img {
+    }
+  }
+  .case-navigation {
+    &:hover {
+      padding-left: 320px;
+    }
+    &:hover .block-slideout {
+      left: 320px;
+    }
+    .block-item:hover .block-slideout {
+      margin-left: -320px;
+    }
+  }
+  .button-full-bordered:hover {
+    background: $color_bunker_approx;
+    //Instead of the line below you could use @include transition-duration($duration-1, $duration-2, $duration-3, $duration-4, $duration-5, $duration-6, $duration-7, $duration-8, $duration-9, $duration-10)
+    transition-duration: 150ms;
+  }
+  .director-list a:hover {
+    background: $color_rangoon_green_approx;
+  }
+  .culture-block a {
+    &:hover .content {
+      background: $white;
+      margin-top: -20px;
+    }
+    &:hover .content-copy {
+      color: $gray;
+    }
+    &.tweet-wrap:hover .content {
+      margin-top: 0;
+    }
+  }
+  .video-reels .items li:hover .video-controls {
+    opacity: 1;
+  }
+  .contact-main .abs-topright {
+    &:hover {
+      background: $white;
+    }
+    &:hover .icn {
+      color: $color_rangoon_green_approx;
+    }
+  }
+  .culture .item-label .block-button:hover .text {
+    color: $white;
+  }
+  .main-nav a:hover {
+    color: $white;
+  }
+}
+.block-item {
+  height: 79px;
+  width: 80px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  &.item-text {
+    width: auto;
+  }
+  .block-button {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: $color_mine_shaft_approx;
+    border-left-width: 1px;
+    border-left-style: solid;
+    font-size: 24px;
+    line-height: 80px;
+    color: $color_gravel_approx;
+    text-decoration: none;
+  }
+  a {
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: $color_mine_shaft_approx;
+    border-left-width: 1px;
+    border-left-style: solid;
+    font-size: 24px;
+    line-height: 80px;
+    color: $color_gravel_approx;
+    text-decoration: none;
+  }
+}
+.block-squared-full-right {
+  text-align: right;
+  border-right: 0;
+}
+.block-squared-float-right {
+  float: right;
+}
+.block-squared-full-left {
+  border-right: 0;
+  .block-item a {
+    border-left: 0;
+    border-right-width: 1px;
+    border-right-style: solid;
+  }
+}
+@media screen and(max-width:1120px) {
+  .preloader {
+    .heading-02 {
+      font-size: 7.4vw;
+      line-height: 1em;
+    }
+    .copy-01 {
+      line-height: 1.4em;
+    }
+    .career-content .career-description {
+      p {
+        line-height: 1.4em;
+      }
+      ul {
+        line-height: 1.4em;
+      }
+    }
+    .contact-main .description p {
+      line-height: 1.4em;
+    }
+  }
+  .career-block {
+    width: 50%;
+  }
+  .case-block {
+    width: 50%;
+  }
+  .tc-block {
+    width: 50%;
+  }
+  .careers {
+    .office-select-dropdown {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: 30px 60px 45px;
+      border-top: 2px solid $color_shark_approx;
+      border-bottom: 2px solid $color_shark_approx;
+      background: $color_rangoon_green_approx;
+      opacity: 0;
+      visibility: hidden;
+      transform: translate(0, -100%);
+      transition: opacity .2s cubic-bezier(.25, .25, .75, .75) .6s, visibility 0s cubic-bezier(.25, .25, .75, .75) .8s, transform .8s cubic-bezier(.19, 1, .22, 1);
+      z-index: 1;
+      &.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0, 0);
+        //Instead of the line below you could use @include transition-delay($delay-1, $delay-2, $delay-3, $delay-4, $delay-5, $delay-6, $delay-7, $delay-8, $delay-9, $delay-10)
+        transition-delay: 0s, 0s, 0s;
+      }
+      .filter-office-item {
+        display: block;
+        margin-right: 0;
+        padding-top: 0;
+        text-align: center;
+        a {
+          font-size: 47px;
+        }
+        &:not(:first-child) {
+          margin-top: 50px;
+        }
+      }
+      .close-button-wrap {
+        text-align: center;
+      }
+      .close-button {
+        height: 60px;
+        width: 60px;
+        display: inline-block;
+        position: relative;
+        margin-top: 50px;
+        border: 3px solid $white;
+        //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+        border-radius: 50%;
+        background: 0 0;
+        .icon-cross {
+          height: 16px;
+          width: 16px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-8px, -8px);
+          color: $white;
+        }
+        .sidenav-open .case-navigation .icon-mobile-nav {
+          height: 16px;
+          width: 16px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-8px, -8px);
+          color: $white;
+        }
+      }
+    }
+    .office-select-title {
+      margin: 0 0 18px;
+      font: 400 23px/1 klavika-bold, Arial, sans-serif;
+      text-transform: uppercase;
+      text-align: center;
+      color: $color_tapa_approx;
+    }
+  }
+  .filter-office-item-desktop {
+    display: none;
+  }
+  .filter-office-trigger-tablet {
+    display: inline-block;
+    cursor: pointer;
+    .filter-office-trigger-label {
+      display: block;
+      position: relative;
+      margin-bottom: 15px;
+      padding-right: 37px;
+      font: 400 24px/1 klavika-bold, Arial, sans-serif;
+      text-transform: uppercase;
+      color: $color_tapa_approx;
+    }
+  }
+  .contact-list li {
+    width: 50%;
+  }
+  .career-content .career-description .preloader {
+    p {
+      line-height: 1.4em;
+    }
+    ul {
+      line-height: 1.4em;
+    }
+  }
+  .contact-main .description .preloader p {
+    line-height: 1.4em;
+  }
+  .sidenav-open .case-navigation .careers .office-select-dropdown .close-button .icon-mobile-nav {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-8px, -8px);
+    color: $white;
+  }
+  .filter-office .block-button .text {
+    padding: 20px 23px 10px;
+  }
+  .filter-office-trigger-tablet .current-office {
+    display: block;
+    font: 400 18px/1 droid-italic, Arial, sans-serif;
+    color: $white;
+  }
+}
+@media screen and(max-width:820px) {
+  .contact-list {
+    li {
+      width: auto;
+      float: none;
+      height: 240px;
+    }
+    .office-name {
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+    }
+    .copy-04 {
+      position: static;
+      width: 50%;
+      float: left;
+    }
+  }
+}
+@media screen and(max-width:480px) {
+  .contact-list {
+    .office-name {
+      float: none;
+      width: auto;
+      margin-bottom: 10px;
+    }
+    .copy-04 {
+      width: auto;
+      float: none;
+    }
+  }
+  .culture-block .cover-image img {
+    max-height: none;
+    width: 100%;
+  }
+  .preloader .line-break {
+    display: block;
+  }
+}
+.case-block {
+  border-right: 1px solid $color_mine_shaft_approx;
+  overflow: hidden;
+  position: relative;
+  float: left;
+  height: 480px;
+  border-bottom: 1px solid $color_mine_shaft_approx;
+  width: 33.3333333333%;
+  box-sizing: border-box;
+  .content {
+    padding: 19px 19px 0;
+    border-bottom: 1px solid $color_mine_shaft_approx;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    height: 160px;
+    background: $color_rangoon_green_approx;
+    box-sizing: border-box;
+    transition: all 150ms ease-out;
+  }
+  .case-wrapper {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .image-wrapper {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    img {
+      transition: all .2s ease-out;
+    }
+  }
+  .img-data-wrap {
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    margin-left: -340px;
+    &.img-small {
+      margin-left: -180px;
+    }
+  }
+  .copy-client {
+    left: 20px;
+    bottom: 18px;
+    font: 400 14px/20px $font_6, $font_7, $font_8;
+    color: $color_storm_dust_approx;
+    margin: 0;
+    position: absolute;
+  }
+  .case-title {
+    transition: color 150ms ease-out;
+  }
+}
+.masthead-item {
+  background: $color_rangoon_green_approx;
+  position: relative;
+  height: 478px;
+  width: 100%;
+  border-top: 1px solid $color_mine_shaft_approx;
+  overflow: hidden;
+  a {
+    cursor: pointer;
+  }
+  .content {
+    position: absolute;
+    left: 60px;
+    bottom: 80px;
+    .headline {
+      padding-bottom: 42px;
+      line-height: .8615;
+    }
+    .block-button {
+      vertical-align: bottom;
+    }
+  }
+  .image-wrapper {
+    .img-data-wrap {
+      position: absolute;
+      left: 50%;
+    }
+    .img-big {
+      margin-left: -960px;
+    }
+    .img-medium {
+      margin-left: -480px;
+    }
+    .img-small {
+      margin-left: -320px;
+    }
+  }
+}
+
+.case-navigation {
+  position: fixed;
+  right: 0;
+  top: 159px;
+  z-index: 4;
+  overflow: hidden;
+  transition: padding-left .1s ease-out;
+  &.sticky {
+    position: fixed;
+    top: -1px;
+    padding-left: 320px;
+    .block-slideout {
+      left: 320px;
+    }
+    > .block-slideout {
+      margin-left: -320px;
+    }
+  }
+  .block-slideout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 320px;
+    background: $color_rangoon_green_approx;
+    border: 1px solid $color_mine_shaft_approx;
+    border-right: 0;
+    text-align: left;
+    padding: 20px 20px 0;
+    box-sizing: border-box;
+    .title {
+      display: block;
+      font: 400 18px/1 klavika, Arial, sans-serif;
+      color: $white;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .text {
+      display: block;
+      font: 400 15px/1 droid, Arial, sans-serif;
+      color: $color_mountain_mist_approx;
+    }
+  }
+  .block-item {
+    height: 79px;
+  }
+  .block-button {
+    background: $color_rangoon_green_approx;
+    z-index: 1;
+  }
+  .icn {
+    color: $white;
+  }
+  .block-squared-list {
+    border-right: 0;
+  }
+}
+.case-content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  iframe {
+    display: block;
+  }
+}
+.content-template-wrap {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.case-closing-elements {
+  padding-top: 109px;
+  padding-bottom: 50px;
+  .follow-label {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    float: right;
+    margin: 0 40px;
+    font: 400 18px/80px $font_1, $font_7, $font_8;
+    color: $color_storm_dust_approx;
+  }
+  .block-button {
+    vertical-align: top;
+  }
+}
+@media screen and(max-width:900px) {
+  .case-navigation {
+    display: none;
+  }
+}
+@media screen and(max-width:1200px) {
+  .case-navigation.sticky {
+    padding-left: 0;
+    .block-slideout {
+      display: none;
+    }
+  }
+  .contact-main .image-wrap.image-high {
+    height: 318px;
+  }
+}
+.mm-games-site {
+  .case-content {
+    border-bottom: 1px solid $color_alto_approx;
+  }
+  .main-logo {
+    top: 15px;
+  }
+}
+.case-image {
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  figcaption {
+    margin-top: 44px;
+    font-size: 16px;
+    text-align: center;
+    color: $color_storm_dust_approx;
+    margin-bottom: -2px;
+  }
+}
+.case-block-spacing {
+  display: block;
+  height: 160px;
+}
+.case-loaded .case-navigation {
+  position: absolute;
+  top: 0;
+}
+.static-page .case-intro {
+  padding-top: 120px;
+}
