@@ -1,10 +1,8 @@
 import React, {PureComponent} from 'react';
-import Header from './components/header';
-import Splash from './components/splashScreen';
-import Tiles from './components/tiles';
-import Footer from './components/footer';
+import Header from './header';
+import Footer from './footer';
 
-class App extends PureComponent {
+class Layout extends PureComponent {
   constructor() {
     super();
     this.state = {
@@ -30,12 +28,11 @@ class App extends PureComponent {
     return (
       <div className='container'>
         <Header scrollTop={scrollTop} />
-        <Splash />
-        <Tiles />
+        {this.props.children}
         <Footer />
       </div>
     );
   }
 }
 
-export default App
+export default Layout

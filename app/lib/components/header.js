@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SVG from '../assets/logo';
 import Globe from '../assets/language';
 
@@ -58,19 +59,19 @@ const Header = ({ scrollTop }) => (
   			</div>
   				<ul className="main-menu">
   					{topBarItems.map((item, idx) => (
-              <li key={`MainMenuItem-${idx}`}><a href="#">{item}</a></li>
+              <li key={`MainMenuItem-${idx}`}><Link to={item.toLowerCase()}>{item}</Link></li>
             ))}
             <li>
-              <a href="#">
+              <Link to="#">
                 <Globe />
-              </a>
+              </Link>
             </li>
   				</ul>
 
   			<div className="scroll-menu-wrap">
   				<ul className="scroll-menu">
             {mobileMenuItems.map((item, idx) => (
-              <li key={`MobileMenu-${idx}`}><a href="">{item}</a></li>
+              <li key={`MobileMenu-${idx}`}><Link to="#">{item}</Link></li>
             ))}
   				</ul>
   			</div>
