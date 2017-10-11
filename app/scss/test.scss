@@ -9,8 +9,12 @@ $border-animation-time: .15s;
 $border-out-animation-time: $border-animation-time / 2;
 
 .heading-02 {
-  text-transform: uppercase;
+    font: normal 72px/.8 klavika-bold,Arial,sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 0;
 }
+
 .heading-04 {
   text-transform: uppercase;
   font: 400 26px/1 klavika-light, Arial, sans-serif;
