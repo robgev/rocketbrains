@@ -23,7 +23,7 @@ const topBarItems = [
 ]
 
 const hideLogoThreshold = 19; //px
-const showBottomBorderThreshold = 100; //px
+const showBottomBorderThreshold = 76  ; //px
 
 const Header = ({ scrollTop }) => (
   <header className={`main-header ${scrollTop > hideLogoThreshold ? 'logo-hidden' : ''}`}>

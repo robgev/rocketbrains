@@ -857,6 +857,13 @@
     }
     .img-big {
       margin-left: -960px;
+      img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 1080px;
+        margin-top: calc(-1080px * 0.2); /* Half the height */
+      }
     }
     .img-medium {
       margin-left: -480px;
@@ -1000,4 +1007,23 @@
 }
 .static-page .case-intro {
   padding-top: 120px;
+}
+.view {
+  position: relative;
+  .view {
+    &:after {
+      clear: both;
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    &:before {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+  }
+  .inverted {
+    background: $white;
+  }
 }
