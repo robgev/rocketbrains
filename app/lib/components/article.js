@@ -1,23 +1,23 @@
 import React from 'react';
 import '../../scss/article.scss';
 
-const Article = props => (
-  <div className="view view-static" style={props.style}>
+const Article = ({style, imageSource, title, children}) => (
+  <div className="view view-static" style={style}>
     <section className="case-content inverted about-mediamonks-main">
       <header className="case-header">
       	<div className="masthead-item">
       		<figure className="image-wrapper">
       			<span className="img-data-wrap img-big">
-              <img alt="Couldn't load image" src={props.imageSource} />
+              <img alt="Couldn't load image" src={imageSource} />
             </span>
       		</figure>
       	</div>
       </header>
 
       <article className="case-content-wrap case-intro">
-      	<h1 className="case-name heading-02">{props.title}</h1>
+      	<h1 className="case-name heading-02">{title}</h1>
       	<div className="content">
-      		{props.children}
+      		{children}
       	</div>
       	<a href="#">
       		<span className="block-button text-bordered" data-bind="" style={{borderColor: '#000'}}>

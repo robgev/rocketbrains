@@ -4,12 +4,12 @@ import Splash from '../components/splashScreen';
 import Tiles from '../components/tiles';
 
 const tileItems = [
-  'Web Development',
-  'Mobile Apps',
-  'Desktop & Web Apps',
-  'Digital Marketing',
-  'Graphic Design',
-  'Animation',
+  { title: 'Web Development', link: ''},
+  { title: 'Mobile Apps', link: ''},
+  { title: 'Desktop & Web Apps', link: ''},
+  { title: 'Digital Marketing', link: ''},
+  { title: 'Graphic Design', link: ''},
+  { title: 'Animation', link: ''},
 ]
 
 const HomePage = () => (

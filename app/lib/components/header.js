@@ -59,7 +59,7 @@ const Header = ({ scrollTop }) => (
   			</div>
   				<ul className="main-menu">
   					{topBarItems.map((item, idx) => (
-              <li key={`MainMenuItem-${idx}`}><Link to={item.toLowerCase()}>{item}</Link></li>
+              <li key={`MainMenuItem-${idx}`}><Link to={`/${item.toLowerCase()}`}>{item}</Link></li>
             ))}
             <li>
               <Link to="#">
