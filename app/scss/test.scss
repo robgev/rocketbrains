@@ -491,8 +491,9 @@ table {
 }
 
 .copy-03 {
-  font: 400 21px/1.6667 droid, Arial, sans-serif;
+  font: 400 21px/1.6667 $font_7, Arial, sans-serif;
   color: $color_storm_dust_approx;
+  white-space: pre-line;
   margin: 0;
   b {
     color: $color_mine_shaft_approx;

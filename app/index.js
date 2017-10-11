@@ -8,6 +8,7 @@ import ReactDOM from 'react-dom';
 
 import HomePage from './lib/routes/homepage';
 import About from './lib/routes/about';
+import Careers from './lib/routes/careers';
 
 import './scss/base.scss';
 import './scss/test.scss';
@@ -20,6 +21,7 @@ class ApplicationRoot extends Component {
           <Route exact path='/' component={HomePage} />
           <Route path='/home' component={HomePage} />
           <Route path='/about' component={About} />
+          <Route path='/careers' component={Careers} />
         </Switch>
       </Router>
     )

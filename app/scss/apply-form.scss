@@ -1,0 +1,195 @@
+@import './utils/colors.scss';
+@import './utils/fonts.scss';
+
+.apply-form {
+  margin-top: -16.75%;
+  border-top: 1px solid $color_mine_shaft_approx;
+  border-bottom: 1px solid $color_mine_shaft_approx;
+  .field {
+    background: 0 0;
+    height: 79px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 26px 0 27px;
+    border: 0;
+    font: 400 18px/26px $font_6, $font_7, $font_8;
+    color: $color_celeste_approx;
+    &:focus {
+      outline: 0;
+    }
+  }
+  .input-row {
+    position: relative;
+    border-top: 1px solid $color_mine_shaft_approx;
+    &:after {
+      clear: both;
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    &:before {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    &:first-child {
+      border-top: 0;
+    }
+  }
+  .submit {
+    clear: both;
+    position: relative;
+    border-top: 1px solid $color_mine_shaft_approx;
+  }
+  fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    &:after {
+      clear: both;
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+    &:before {
+      display: table;
+      content: "";
+      line-height: 0;
+    }
+  }
+  &:after {
+    clear: both;
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:before {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  label {
+    font-family: $font_1, $font_7, $font_8;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 40%;
+    max-width: 220px;
+    float: left;
+    line-height: 79px;
+    color: $white;
+  }
+  .inp-placeholder {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: $font_1, $font_7, $font_8;
+    color: $white;
+  }
+  .col-fields {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    &.col-full {
+      width: 100%;
+    }
+  }
+  .col-info {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 44px 180px 44px 60px;
+    &.col-full {
+      width: 100%;
+    }
+  }
+  .input-wrapper {
+    overflow: hidden;
+    margin: 0;
+    ::-webkit-scrollbar {
+      width: 14px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: $color_mine_shaft_approx;
+    }
+    &.validation-failed:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      height: 1px;
+      background: $color_red_orange_approx;
+      z-index: 1;
+    }
+  }
+  .textarea {
+    height: 239px;
+    resize: none;
+  }
+  ::-webkit-input-placeholder {
+    font-family: $font_1, $font_7, $font_8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  :-moz-placeholder {
+    font-family: $font_1, $font_7, $font_8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  :-ms-placeholder {
+    font-family: $font_1, $font_7, $font_8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  :-o-placeholder {
+    font-family: $font_1, $font_7, $font_8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  :placeholder {
+    font-family: $font_1, $font_7, $font_8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  button {
+    background: 0 0;
+    border: 0;
+    font-weight: 400;
+    height: 78px;
+    float: right;
+    border-left: 1px solid $color_mine_shaft_approx;
+  }
+  .attach-file {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 78px;
+    width: 78px;
+    border-left: 1px solid $color_mine_shaft_approx;
+    border-right: 1px solid $color_mine_shaft_approx;
+    text-align: center;
+    font-size: 26px;
+    .icn {
+      position: absolute;
+      top: 50%;
+      bottom: auto;
+      left: 50%;
+      right: auto;
+      height: 26px;
+      width: 26px;
+      margin-top: -13px;
+      margin-left: -13px;
+    }
+  }
+  .apply-button {
+    margin-top: 50px;
+  }
+  .inverted .input-wrapper ::-webkit-scrollbar-thumb {
+    background: $color_alto_approx;
+  }
+}
