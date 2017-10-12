@@ -831,7 +831,7 @@
 .masthead-item {
   background: $color_rangoon_green_approx;
   position: relative;
-  height: 478px;
+  height: 800px;
   width: 100%;
   border-top: 1px solid $color_mine_shaft_approx;
   overflow: hidden;
@@ -858,11 +858,8 @@
     .img-big {
       margin-left: -960px;
       img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        height: 1080px;
-        margin-top: calc(-1080px * 0.2); /* Half the height */
+        width: 1920px;
+        object-fit: cover;
       }
     }
     .img-medium {
