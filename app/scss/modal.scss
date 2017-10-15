@@ -1,0 +1,52 @@
+@import './utils/fonts.scss';
+
+.ReactModalPortal {
+  .ReactModal__Overlay {
+    z-index: 4;
+    transition: opacity 200ms ease-in-out;
+    background: rgba(0, 0, 0, 0.15);
+    &--after-open {
+      opacity: 1;
+    }
+    &--before-close {
+      opacity: 0;
+    }
+    .closeButton {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-family: $font_3;
+      font-size: 13px;
+      white-space: pre-wrap;
+      transform: rotate(90deg);
+      text-transform: uppercase;
+      cursor: pointer;
+      i {
+        font-weight: 400;
+      }
+    }
+    .heading-02 {
+      padding-top: 40px;
+      font: normal 72px/.8 $font_1,Arial,sans-serif;
+      text-align: center;
+      letter-spacing: 8px;
+      color: black;
+    }
+    .registration-form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .submit-button {
+        font-weight: 900;
+        letter-spacing: normal;
+        font-size: 21px;
+        padding: 0 50px 2px
+      }
+    }
+  }
+
+  > div {
+    opacity: 0;
+  }
+}
