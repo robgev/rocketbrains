@@ -41,7 +41,43 @@
         font-weight: 900;
         letter-spacing: normal;
         font-size: 21px;
-        padding: 0 50px 2px
+        padding: 0 70px 2px
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        flex: 1;
+        input {
+          display: flex;
+          flex: 1;
+          margin: 6px;
+          width: 100%;
+          box-sizing: border-box;
+          border: 3px solid #767676;
+          padding: 30px;
+          font-family: $font_1;
+          font-size: 25px;
+          text-transform: uppercase;
+        }
+        .contact-info {
+          display: flex;
+          width: 100%;
+          flex: 1;
+        }
+      }
+      .applicant-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .form-group {
+          margin: 3px;
+        }
+      }
+      .big-margin-bottom {
+        margin-bottom: 30px;
       }
     }
   }

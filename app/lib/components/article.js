@@ -20,7 +20,7 @@ const Article = ({style, imageSource, title, children}) => (
       		{children}
       	</div>
       	<a href="#">
-      		<span className="block-button text-bordered" data-bind="" style={{borderColor: '#000'}}>
+      		<span className="block-button text-bordered" style={{borderColor: '#000'}}>
       				<span className="bg"></span>
       				<span className="text" style={{color: '#000'}}>Contact Us</span>
       		</span>
