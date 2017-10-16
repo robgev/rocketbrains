@@ -39,7 +39,11 @@ class ApplyForm extends PureComponent {
             </a>
           </div>
         </form>
-        <Modal isOpen={modalOpen} onRequestClose={this.closeModal} />
+        <Modal
+          isOpen={modalOpen}
+          onRequestClose={this.closeModal}
+          positionPlaceholder={'Your dream position'}
+        />
       </div>
     );
   }

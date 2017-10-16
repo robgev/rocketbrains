@@ -6,6 +6,8 @@ const About = () => (
   <Layout>
     <Article
       title='About'
+      withLinkButton
+      buttonText='Contact us'
       imageSource='/images/about.jpg'
       style={{paddingBottom: '300px'}}
     >
