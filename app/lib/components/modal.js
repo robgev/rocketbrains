@@ -91,7 +91,7 @@ class Modal extends PureComponent {
           <a href='#'>
             <span className='block-button text-bordered' style={{borderColor: '#000'}}>
                 <span className='bg'></span>
-                <span className='text submit-button'>Submit</span>
+                <span className='submit-button text'>Submit</span>
             </span>
           </a>
         </form>

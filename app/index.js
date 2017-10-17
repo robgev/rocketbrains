@@ -10,6 +10,7 @@ import HomePage from './lib/routes/homepage';
 import About from './lib/routes/about';
 import Careers from './lib/routes/careers';
 import DetailedJobPosting from './lib/routes/careers/detailed';
+import Contacts from './lib/routes/contacts';
 
 import './scss/base.scss';
 import './scss/test.scss';
@@ -24,6 +25,7 @@ class ApplicationRoot extends Component {
           <Route path='/about' component={About} />
           <Route path='/careers/:jobID' component={DetailedJobPosting} />
           <Route path='/careers' component={Careers} />
+          <Route path='/contacts' component={Contacts} />
         </Switch>
       </Router>
     )
