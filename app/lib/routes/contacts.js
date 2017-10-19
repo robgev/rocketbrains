@@ -42,7 +42,7 @@ const Contacts = () => (
         </a>
       </form>
     </Article>
-    <div className='office-info' style={{paddingBottom: '300px'}}>
+    <div className='office-info' style={{paddingBottom: '150px'}}>
       <div className='header'>
         <h1 className='heading-02'>Our Office</h1>
       </div>
@@ -55,6 +55,17 @@ const Contacts = () => (
         <div className='image-overlay-text'>
           <h3 className='heading-04'>Yerevan</h3>
           <p>info@rocketbrains.co    |    +1 937 723 2300</p>
+        </div>
+        <div className='bottom-text'>
+          <p>{`Located just five minutes away from American University of Armenia, our office is
+            where we produce the majority of our work. We’ve been here ever since 2017, growing
+            from a 3 man basement to 35,000 square feet of multimedia muscle.
+          `}</p>
+          <p>{`
+            Marshal Baghramyan Avenue 49/2
+            0019 Yerevan
+            Armenia
+          `}</p>
         </div>
       </div>
     </div>
