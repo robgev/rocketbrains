@@ -2,7 +2,7 @@ import React from 'react';
 import '../../scss/caseTiles.scss'
 
 const CaseTiles = ({tileItems}) => (
-  <ul className='cases' style={{paddingBottom: '85%'}}>
+  <ul className='cases case-tiles' style={{paddingBottom: '85%'}}>
     {tileItems.map((tileItem, idx) => tileItem.title ? (
       	<li className='case-block' key={tileItem.title} style={{paddingLeft: 0}}>
         	<a className='case-wrapper'>

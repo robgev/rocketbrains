@@ -78,10 +78,10 @@ const data = {
     imageSource: '/images/coding.jpg',
     tileItems: [
       {
-        alt: '',
-        imageSource: '/images/',
-        link: '',
-        title: '',
+        alt: 'Nude',
+        imageSource: '/images/mobile_apps/01.jpg',
+        link: '/home/mobile-apps',
+        title: 'Nude',
       },
     ],
   },

@@ -1,8 +1,28 @@
-.block-empty .diagonal {
+.case-tiles {
+  .case-block {
+    border-top: 1px solid #333;
+    .image-wrapper {
+      height: 380px;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      height: 100px;
+      padding-top: 0;
+    }
+    &:hover {
+      .content {
+        height: 120px;
+        background: #fff;
+      }
+    }
+  }
+  .block-empty .diagonal {
     position: absolute;
     display: block;
     left: 0;
     bottom: 0;
     background: #333;
     height: 1px;
+  }
 }
