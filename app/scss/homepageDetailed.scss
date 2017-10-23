@@ -1,0 +1,22 @@
+.hompage-detailed-article-wrapper {
+  .image-overlay-text {
+    position: absolute;
+    top: 60%;
+    white-space: pre-line;
+    left: 15%;
+    text-shadow: 6px 3px 20px #333;
+    &.heading-02 {
+      color: white;
+    }
+  }
+  .hompage-detailed-article {
+    margin: 0;
+    max-width: 100%;
+    padding-left: 0;
+    padding-bottom: 0;
+    width: 100%;
+    .heading-02 {
+      margin-top: 30px;
+    }
+  }
+}

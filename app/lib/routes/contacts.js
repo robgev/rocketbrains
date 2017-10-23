@@ -9,7 +9,10 @@ const Contacts = () => (
     <Article
       title='Contact us'
       imageSource='/images/contacts.jpg'
+      imageOverlayText={`We look forward
+        to talking to you`}
       articleClassName='careers-article'
+      className='carrers-article-wrapper'
     >
       <p style={{paddingBottom: '30px'}}>
         For new business and all other questions, comments or information please fill out the form

@@ -1,8 +1,7 @@
 import React from 'react';
 import '../../scss/article.scss';
-import '../../scss/sectionPage.scss';
 
-const Article = ({
+const SectionPage = ({
   style,
   title,
   onClick,
@@ -16,7 +15,7 @@ const Article = ({
   withClickableButton,
 }) => (
   <div className={`view view-static ${className || ''}`} style={style}>
-    <section className='case-content inverted about-mediamonks-main'>
+    <section className='case-content about-mediamonks-main'>
       <header className='case-header'>
       	<div className='masthead-item'>
       		<figure className='image-wrapper'>
@@ -35,25 +34,9 @@ const Article = ({
       	<div className='content'>
       		{children}
       	</div>
-        { withClickableButton &&
-        	<a onClick={onClick}>
-        		<span className='block-button text-bordered' style={{borderColor: '#000'}}>
-        				<span className='bg'></span>
-        				<span className='text' style={{color: '#000'}}>{buttonText}</span>
-        		</span>
-        	</a>
-        }
-        { withLinkButton &&
-          <a href=''>
-        		<span className='block-button text-bordered' style={{borderColor: '#000'}}>
-        				<span className='bg'></span>
-        				<span className='text' style={{color: '#000'}}>{buttonText}</span>
-        		</span>
-        	</a>
-        }
       </article>
     </section>
   </div>
 );
 
-export default Article
+export default SectionPage

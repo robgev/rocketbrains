@@ -6,11 +6,12 @@ import {
 } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
-import HomePage from './lib/routes/homepage';
 import About from './lib/routes/about';
 import Careers from './lib/routes/careers';
-import DetailedJobPosting from './lib/routes/careers/detailed';
 import Contacts from './lib/routes/contacts';
+import HomePage from './lib/routes/homepage';
+import DetailedJobPosting from './lib/routes/careers/detailed';
+import DetailedSectionInfo from './lib/routes/homepage/detailed';
 
 import './scss/base.scss';
 import './scss/test.scss';
@@ -21,6 +22,7 @@ class ApplicationRoot extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route path='/home/:sectionID' component={DetailedSectionInfo} />
           <Route path='/home' component={HomePage} />
           <Route path='/about' component={About} />
           <Route path='/careers/:jobID' component={DetailedJobPosting} />
