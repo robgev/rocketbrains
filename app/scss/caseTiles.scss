@@ -1,8 +1,16 @@
 .case-tiles {
   .case-block {
     border-top: 1px solid #333;
+    height: 329px;
     .image-wrapper {
       height: 380px;
+      .img-data-wrap {
+        position: unset;
+        margin-left: 0;
+        img {
+          width: 100%;
+        }
+      }
     }
     .content {
       display: flex;
