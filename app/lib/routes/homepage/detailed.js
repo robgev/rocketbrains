@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../../components/layout';
 import SectionPage from '../../components/sectionPage';
 import CaseTiles from '../../components/caseTiles';
+import Preview from '../../components/preview';
 import data from './data';
 import { fillArrayWithEmptyTiles } from '../../utils';
 
@@ -19,6 +20,11 @@ const DetailedSectionInfo = ({match}) => {
         articleClassName='hompage-detailed-article'
       >
         <CaseTiles tileItems={fillArrayWithEmptyTiles(tileItems, {title: ''})} />
+        <Preview
+          isOpen={!!match.params.itemID}
+          onRequestClose={() => window.history.back()}
+          positionPlaceholder={match.params.itemID}
+        />
       </SectionPage>
     </Layout>
   );

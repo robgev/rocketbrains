@@ -22,6 +22,7 @@ class ApplicationRoot extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={HomePage} />
+          <Route path='/home/:sectionID/:itemID' component={DetailedSectionInfo} />
           <Route path='/home/:sectionID' component={DetailedSectionInfo} />
           <Route path='/home' component={HomePage} />
           <Route path='/about' component={About} />

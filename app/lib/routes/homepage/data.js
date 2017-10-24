@@ -132,10 +132,10 @@ const data = {
         title: 'Unarm',
       },
       {
-        alt: 'Yerework',
+        alt: 'Yerewok',
         imageSource: '/images/graphic_design/03.jpg',
-        link: '/home/graphic-design/yerework',
-        title: 'Yerework',
+        link: '/home/graphic-design/yerewok',
+        title: 'Yerewok',
       },
       {
         alt: 'Mata Toys',

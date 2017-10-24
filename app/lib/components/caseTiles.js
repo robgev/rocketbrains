@@ -1,11 +1,12 @@
 import React from 'react';
-import '../../scss/caseTiles.scss'
+import { Link } from 'react-router-dom';
+import '../../scss/caseTiles.scss';
 
 const CaseTiles = ({tileItems}) => (
-  <ul className='cases case-tiles' style={{paddingBottom: '85%'}}>
+  <ul className='cases case-tiles'>
     {tileItems.map((tileItem, idx) => tileItem.title ? (
       	<li className='case-block' key={tileItem.title} style={{paddingLeft: 0}}>
-        	<a className='case-wrapper'>
+        	<Link to={tileItem.link} className='case-wrapper'>
         		<figure className='image-wrapper'>
         			<span className='img-data-wrap img-big' >
                 <img alt={tileItems.alt} src={tileItem.imageSource} />
@@ -15,7 +16,7 @@ const CaseTiles = ({tileItems}) => (
         		<div className='content'>
         			<h3 className='case-title heading-04'>{tileItem.title}</h3>
         		</div>
-        	</a>
+        	</Link>
         </li>
       ) : (
       	<li className='case-block block-empty' key={`tileItem-empty-${idx}`}>
@@ -24,7 +25,7 @@ const CaseTiles = ({tileItems}) => (
             style={{
               width: 679,
               transformOrigin: 'left 50% 0px',
-              transform: 'matrix(0.7071, -0.7071, 0.7071, 0.7071, 0, 0)'
+              transform: 'matrix(1.035, -0.7071, 0.7071, 0.7071, 0, 0)'
             }}></span>
         </li>
       )
