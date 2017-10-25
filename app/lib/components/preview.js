@@ -14,6 +14,7 @@ class Preview extends PureComponent {
     const {
       isOpen,
       onRequestClose,
+      imagePath,
     } = this.props;
     return (
       <ReactModal
@@ -25,13 +26,16 @@ class Preview extends PureComponent {
             backgroundColor: 'rgba(0,0,0,0.75)',
           },
           content: {
-            top: '13%',
-            left: '27%',
-            right: '27%',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            overflow: 'hidden',
+            top: '15%',
+            left: '0',
+            right: '0',
             bottom: '15%',
             borderRadius: 0,
-            paddingLeft: 50,
-            paddingRight: 50,
+            padding: 0,
           }
         }}
         closeTimeoutMS={200}
@@ -39,7 +43,13 @@ class Preview extends PureComponent {
         <div className='closeButton' onClick={onRequestClose}>
           Close  <i className='fa fa-times' aria-hidden='true'></i>
         </div>
-        <h1 className='heading-02 section-heading'>Application Form</h1>
+        <div className='slide-btn prev'>
+          <i className='fa fa-angle-left' aria-hidden='true'></i>
+        </div>
+        <img src={`/images/${imagePath}.jpg`} style={{width: '100%'}}/>
+        <div className='slide-btn next'>
+          <i className='fa fa-angle-right' aria-hidden='true'></i>
+        </div>
       </ReactModal>
     );
   }

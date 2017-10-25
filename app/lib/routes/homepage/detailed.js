@@ -23,7 +23,7 @@ const DetailedSectionInfo = ({match}) => {
         <Preview
           isOpen={!!match.params.itemID}
           onRequestClose={() => window.history.back()}
-          positionPlaceholder={match.params.itemID}
+          imagePath={`${match.params.sectionID}/${match.params.itemID}`}
         />
       </SectionPage>
     </Layout>

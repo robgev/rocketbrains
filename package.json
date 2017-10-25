@@ -11,7 +11,7 @@
     "watch": "node scripts/watch-project.js",
     "babel-watch": "NODE_ENV='debug' babel app --watch --out-dir frontend",
     "webpack-watch": "NODE_ENV='debug' webpack-dev-server --progress -d --colors --watch",
-    "start": "webpack-dev-server --progress --colors"
+    "start": "node scripts/watch-project.js"
   },
   "license": "ISC",
   "dependencies": {
