@@ -10,3 +10,5 @@ firebase-debug.log
 backend/server.js
 frontend
 .DS_Store
+public/fonts
+dist

@@ -1,6 +1,10 @@
 {
   "name": "rocketbrains",
   "version": "1.0.0",
+  "engines": {
+    "node": "8.7.0",
+    "npm": "5.5.1"
+  },
   "description": "The source code behind rocketbrains",
   "main": "index.js",
   "repository": {
@@ -11,10 +15,12 @@
     "watch": "node scripts/watch-project.js",
     "babel-watch": "NODE_ENV='debug' babel app --watch --out-dir frontend",
     "webpack-watch": "NODE_ENV='debug' webpack-dev-server --progress -d --colors --watch",
-    "start": "node scripts/watch-project.js"
+    "build": "webpack --progress --colors",
+    "start": "node server.js"
   },
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "react": "^15.6.1",
