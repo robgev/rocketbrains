@@ -6,10 +6,12 @@ import {
 } from 'react-router-dom';
 import ReactDOM from 'react-dom';
 
+import Blog from './lib/routes/blog';
 import About from './lib/routes/about';
 import Careers from './lib/routes/careers';
 import Contacts from './lib/routes/contacts';
 import HomePage from './lib/routes/homepage';
+import DetailedBlogPost from './lib/routes/blog/detailed';
 import DetailedJobPosting from './lib/routes/careers/detailed';
 import DetailedSectionInfo from './lib/routes/homepage/detailed';
 import DetailedCaseStudy from './lib/routes/homepage/caseDetailed';
@@ -30,6 +32,8 @@ class ApplicationRoot extends Component {
           <Route path='/careers/:jobID' component={DetailedJobPosting} />
           <Route path='/careers' component={Careers} />
           <Route path='/contacts' component={Contacts} />
+          <Route path='/blog/:postID' component={DetailedBlogPost} />
+          <Route path='/blog' component={Blog} />
         </Switch>
       </Router>
     )
