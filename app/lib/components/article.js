@@ -36,14 +36,14 @@ const Article = ({
                   <Link
                     key='button-prev'
                     className='slide-btn prev'
-                    to={routeLinks.nextItemLink}
+                    to={routeLinks.prevItemLink}
                   >
                     <i className='fa fa-angle-left' aria-hidden='true'></i>
                   </Link>,
                   <Link
                     key='button-next'
                     className='slide-btn next'
-                    to={routeLinks.prevItemLink}
+                    to={routeLinks.nextItemLink}
                   >
                     <i className='fa fa-angle-right' aria-hidden='true'></i>
                   </Link>

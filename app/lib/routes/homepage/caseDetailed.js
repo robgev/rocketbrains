@@ -7,8 +7,10 @@ import 'scss/detailedCase.scss';
 
 const getFollowingItemLinks = (tileItems, currentItem) => {
   const currentIndex = tileItems.indexOf(currentItem);
-  const nextItemIndex = (currentIndex + 1) % tileItems.length;
-  const prevItemIndex = (currentIndex - 1) % tileItems.length;
+  const { length } = tileItems;
+  const nextItemIndex = (currentIndex + 1) % length;
+  const prevItemIndex = (currentIndex - 1) > -1 ?
+    (currentIndex - 1) : (currentIndex - 1) + length;
   const { link: nextItemLink } = tileItems[nextItemIndex];
   const { link: prevItemLink } = tileItems[prevItemIndex];
   return { nextItemLink, prevItemLink };

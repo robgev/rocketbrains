@@ -3,7 +3,7 @@
 const data = {
   'web-development': {
     title: 'Web Development',
-    imageSource: '/images/coding.jpg',
+    imageSource: '/images/web-development.jpg',
     tileItems: [
       {
         id: 'vbet',
@@ -86,7 +86,7 @@ const data = {
   },
   'mobile-apps': {
     title: 'Mobile Apps',
-    imageSource: '/images/coding.jpg',
+    imageSource: '/images/mobile-apps.jpg',
     tileItems: [
       {
         id: 'nude',
@@ -99,7 +99,7 @@ const data = {
   },
   'desktop-apps': {
     title: 'Desktop & Web Apps',
-    imageSource: '/images/coding.jpg',
+    imageSource: '/images/desktop-apps.jpg',
     tileItems: [
       {
         id: '',
@@ -112,7 +112,7 @@ const data = {
   },
   'digital-marketing': {
     title: 'Digital Marketing',
-    imageSource: '/images/coding.jpg',
+    imageSource: '/images/digital-marketing.jpg',
     tileItems: [
       {
         id: 'best-cart',
@@ -132,7 +132,7 @@ const data = {
   },
   'graphic-design': {
     title: 'Graphic Design',
-    imageSource: '/images/coding.jpg',
+    imageSource: '/images/graphic-design.jpg',
     tileItems: [
       {
         id: 'auto-eagle',
@@ -215,7 +215,7 @@ const data = {
   },
   'animation': {
     title: 'Animation',
-    imageSource: '/images/coding.jpg',
+    imageSource: '/images/animation.jpg',
     tileItems: [
       {
         id: '',
