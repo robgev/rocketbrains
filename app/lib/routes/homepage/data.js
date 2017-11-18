@@ -100,15 +100,7 @@ const data = {
   'desktop-apps': {
     title: 'Desktop & Web Apps',
     imageSource: '/images/desktop-apps.jpg',
-    tileItems: [
-      {
-        id: '',
-        alt: '',
-        imageSource: '/images/',
-        link: '',
-        title: '',
-      },
-    ],
+    tileItems: [],
   },
   'digital-marketing': {
     title: 'Digital Marketing',
