@@ -8,7 +8,7 @@ import { fillArrayWithEmptyTiles } from '../../utils';
 
 import '../../../scss/homepageDetailed.scss';
 
-const DetailedSectionInfo = ({match}) => {
+const DetailedSectionInfo = ({ match }) => {
   const { imageSource, title, tileItems } = data[match.params.sectionID];
   return (
     <Layout>

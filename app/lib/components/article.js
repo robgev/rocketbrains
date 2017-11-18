@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../scss/article.scss';
 import '../../scss/sectionPage.scss';
+import Statistics from './statistics';
 
 const Article = ({
   style,
@@ -8,11 +10,16 @@ const Article = ({
   onClick,
   children,
   className,
+  routeLinks,
   buttonText,
+  buttonLink,
   imageSource,
+  statisticsData,
+  withStatistics,
   withLinkButton,
-  imageOverlayText,
   articleClassName,
+  imageOverlayText,
+  withRouteButtons,
   withClickableButton,
 }) => (
   <div className={`view view-static ${className || ''}`} style={style}>
@@ -25,6 +32,23 @@ const Article = ({
               { !imageOverlayText ? null :
                 <h1 className='case-name heading-02 image-overlay-text'>{imageOverlayText}</h1>
               }
+              { !withRouteButtons ? null : [
+                  <Link
+                    key='button-prev'
+                    className='slide-btn prev'
+                    to={routeLinks.nextItemLink}
+                  >
+                    <i className='fa fa-angle-left' aria-hidden='true'></i>
+                  </Link>,
+                  <Link
+                    key='button-next'
+                    className='slide-btn next'
+                    to={routeLinks.prevItemLink}
+                  >
+                    <i className='fa fa-angle-right' aria-hidden='true'></i>
+                  </Link>
+                ]
+              }
             </span>
       		</figure>
       	</div>
@@ -35,6 +59,11 @@ const Article = ({
       	<div className='content'>
       		{children}
       	</div>
+        { withStatistics &&
+          <Statistics
+            data={statisticsData}
+          />
+        }
         { withClickableButton &&
         	<a onClick={onClick}>
         		<span className='block-button text-bordered' style={{borderColor: '#000'}}>
@@ -44,12 +73,12 @@ const Article = ({
         	</a>
         }
         { withLinkButton &&
-          <a href=''>
+          <Link to={buttonLink}>
         		<span className='block-button text-bordered' style={{borderColor: '#000'}}>
         				<span className='bg'></span>
         				<span className='text' style={{color: '#000'}}>{buttonText}</span>
         		</span>
-        	</a>
+        	</Link>
         }
       </article>
     </section>

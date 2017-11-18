@@ -22,6 +22,25 @@
     max-width: 1040px;
   }
 }
+.slide-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 80px;
+  font-size: 8rem;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  border: 1px solid #333;
+  color: white;
+  &.next {
+    right: 0;
+  }
+  &.prev {
+    right: 80px;
+  }
+}
 .inverted {
   color: $color_rangoon_green_approx;
   .heading-02 {

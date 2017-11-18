@@ -1,0 +1,25 @@
+@import './utils/colors.scss';
+@import './utils/fonts.scss';
+
+.statistics-tiles {
+  display: flex;
+  border: 1px solid $color_mine_shaft_approx;
+  margin-bottom: 30px;
+  .statistics-block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15rem 10rem;
+    &:not(:last-child) {
+      border-right: 1px solid $color_mine_shaft_approx;
+    }
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+      text-align: center;
+      font: 700 3rem/3rem $font_1;
+    }
+  }
+}

@@ -12,6 +12,7 @@ import Contacts from './lib/routes/contacts';
 import HomePage from './lib/routes/homepage';
 import DetailedJobPosting from './lib/routes/careers/detailed';
 import DetailedSectionInfo from './lib/routes/homepage/detailed';
+import DetailedCaseStudy from './lib/routes/homepage/caseDetailed';
 
 import './scss/base.scss';
 import './scss/test.scss';
@@ -22,7 +23,7 @@ class ApplicationRoot extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={HomePage} />
-          <Route path='/home/:sectionID/:itemID' component={DetailedSectionInfo} />
+          <Route path='/home/:sectionID/:itemID' component={DetailedCaseStudy} />
           <Route path='/home/:sectionID' component={DetailedSectionInfo} />
           <Route path='/home' component={HomePage} />
           <Route path='/about' component={About} />

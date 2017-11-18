@@ -1,0 +1,39 @@
+@import './utils/fonts.scss';
+
+.case-article-wrapper{
+  padding-bottom: 15rem;
+  img {
+    filter: opacity(0.7);
+  }
+  .image-overlay-text {
+    position: absolute;
+    white-space: pre-line;
+    top: 70%;
+    width: 100%;
+    text-align: center;
+    text-shadow: 6px 3px 20px #333;
+    &.heading-02 {
+      color: white;
+    }
+  }
+  .case-study-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    .content {
+      max-width: 820px;
+      p {
+        margin-top: 0;
+        font: 400 1.8rem/1.6667 klavika, Arial, sans-serif;
+      }
+    }
+    .case-name {
+      text-align: center;
+    }
+  }
+}
