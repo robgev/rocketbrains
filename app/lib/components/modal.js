@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import ReactModal from 'react-modal';
 
-import '../../scss/modal.scss';
+import 'scss/modal.scss';
 
 class Modal extends PureComponent {
   constructor() {

@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../../components/layout';
-import Article from '../../components/article';
+import Layout from 'components/layout';
+import Article from 'components/article';
 import data from './data';
 
-import '../../../scss/detailedCase.scss';
+import 'scss/detailedCase.scss';
 
 const getFollowingItemLinks = (tileItems, currentItem) => {
   const currentIndex = tileItems.indexOf(currentItem);

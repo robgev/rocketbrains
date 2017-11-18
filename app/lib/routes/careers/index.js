@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from '../../components/layout';
-import Tiles from '../../components/tiles';
-import ApplyForm from '../../components/applyForm';
+import Layout from 'components/layout';
+import Tiles from 'components/tiles';
+import ApplyForm from 'components/applyForm';
 
-import '../../../scss/careers.scss';
+import 'scss/careers.scss';
 
 const tileItems = [
   { title: 'Android developer', link: '/careers/android'},

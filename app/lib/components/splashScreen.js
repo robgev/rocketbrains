@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../scss/splash.scss';
+import 'scss/splash.scss';
 
 const Splash = () => (
   <div className='splash-container'>

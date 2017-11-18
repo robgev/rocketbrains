@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SVG from '../assets/logo';
-import Globe from '../assets/language';
+import SVG from 'assets/logo';
+import Globe from 'assets/language';
 
-import '../../scss/header.scss';
+import 'scss/header.scss';
 
 const mobileMenuItems = [
   'Web Development',

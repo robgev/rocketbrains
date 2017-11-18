@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../scss/statistics.scss';
+import 'scss/statistics.scss';
 
 const Statistics = ({ data }) => (
   <section className='view'>

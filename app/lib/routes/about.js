@@ -1,12 +1,13 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Article from '../components/article';
+import Layout from 'components/layout';
+import Article from 'components/article';
 
 const About = () => (
   <Layout>
     <Article
       title='About'
       withLinkButton
+      buttonLink='/contacts'
       buttonText='Contact us'
       imageSource='/images/about.jpg'
       style={{paddingBottom: '300px'}}

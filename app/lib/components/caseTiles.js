@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../scss/caseTiles.scss';
+import 'scss/caseTiles.scss';
 
 const CaseTiles = ({tileItems}) => (
   <ul className='cases case-tiles'>

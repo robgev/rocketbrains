@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../scss/article.scss';
+import 'scss/article.scss';
 
 const SectionPage = ({
   style,

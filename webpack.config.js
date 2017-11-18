@@ -16,7 +16,13 @@ const config = {
     historyApiFallback: true
   },
   resolve: {
-    extensions: [' ', '.js', '.jsx']
+    extensions: [' ', '.js', '.jsx'],
+    alias: {
+      assets: path.resolve(__dirname, 'app/lib/assets'),
+      components: path.resolve(__dirname, 'app/lib/components'),
+      scss: path.resolve(__dirname, 'app/scss'),
+      utils: path.resolve(__dirname, 'app/lib/utils.js'),
+    }
   },
   module: {
     rules: [

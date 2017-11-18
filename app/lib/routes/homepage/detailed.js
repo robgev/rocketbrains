@@ -1,12 +1,12 @@
 import React from 'react';
-import Layout from '../../components/layout';
-import SectionPage from '../../components/sectionPage';
-import CaseTiles from '../../components/caseTiles';
-import Preview from '../../components/preview';
+import Layout from 'components/layout';
+import SectionPage from 'components/sectionPage';
+import CaseTiles from 'components/caseTiles';
+import Preview from 'components/preview';
 import data from './data';
-import { fillArrayWithEmptyTiles } from '../../utils';
+import { fillArrayWithEmptyTiles } from 'utils';
 
-import '../../../scss/homepageDetailed.scss';
+import 'scss/homepageDetailed.scss';
 
 const DetailedSectionInfo = ({ match }) => {
   const { imageSource, title, tileItems } = data[match.params.sectionID];

@@ -1,6 +1,6 @@
 import React, {PureComponent} from 'react';
 import Modal from './modal';
-import '../../scss/apply-form.scss';
+import 'scss/apply-form.scss';
 
 class ApplyForm extends PureComponent {
   constructor() {

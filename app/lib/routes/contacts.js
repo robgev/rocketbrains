@@ -1,8 +1,8 @@
 import React from 'react';
-import Layout from '../components/layout';
-import Article from '../components/article';
+import Layout from 'components/layout';
+import Article from 'components/article';
 
-import '../../scss/contacts.scss';
+import 'scss/contacts.scss';
 
 const Contacts = () => (
   <Layout>

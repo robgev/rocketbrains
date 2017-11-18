@@ -1,7 +1,7 @@
 import React,  { PureComponent } from 'react';
-import Layout from '../../components/layout';
-import Article from '../../components/article';
-import Modal from '../../components/modal';
+import Layout from 'components/layout';
+import Article from 'components/article';
+import Modal from 'components/modal';
 import data from './data';
 
 class DetailedJobPosting extends PureComponent {

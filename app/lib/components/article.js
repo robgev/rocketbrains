@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../scss/article.scss';
-import '../../scss/sectionPage.scss';
+import 'scss/article.scss';
+import 'scss/sectionPage.scss';
 import Statistics from './statistics';
 
 const Article = ({
