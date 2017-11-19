@@ -41,6 +41,19 @@
     right: 80px;
   }
 }
+.share-actions-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  font-size: 8rem;
+  position: absolute;
+  top: 0;
+  background-color: black;
+  border: 1px solid #333;
+  color: white;
+  left: 0
+}
 .inverted {
   color: $color_rangoon_green_approx;
   .heading-02 {

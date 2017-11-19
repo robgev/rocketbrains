@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import 'scss/article.scss';
 import 'scss/sectionPage.scss';
 import Statistics from './statistics';
+import ShareActions from './shareActions';
 
 const Article = ({
   style,
@@ -19,6 +20,7 @@ const Article = ({
   withLinkButton,
   articleClassName,
   imageOverlayText,
+  withShareActions,
   withRouteButtons,
   withClickableButton,
 }) => (
@@ -48,6 +50,18 @@ const Article = ({
                     <i className='fa fa-angle-right' aria-hidden='true'></i>
                   </Link>
                 ]
+              }
+              { !withShareActions ? null :
+                  <div className='share-actions-wrapper'>
+                    <a className="block-button text-bordered share-button">
+                      <span className="bg"></span>
+                      <span className="text">Share</span>
+                    </a>
+                    <ShareActions
+                      twitter
+                      facebook
+                    />
+                  </div>
               }
             </span>
       		</figure>

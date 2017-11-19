@@ -3,7 +3,7 @@ import Layout from 'components/layout';
 import Article from 'components/article';
 import data from './data';
 
-import 'scss/detailedCase.scss';
+import 'scss/blogPost.scss';
 
 const getFollowingItemLinks = (tileItems, currentItem) => {
   const currentIndex = tileItems.indexOf(currentItem);
@@ -24,16 +24,14 @@ const DetailedBlogPost = ({ match }) => {
   return (
     <Layout>
       <Article
-        withLinkButton
+        title={title}
+        withShareActions
         withRouteButtons
         routeLinks={links}
-        title='The Strategy'
-        buttonLink='/contacts'
         buttonText='Contact us'
-        imageOverlayText={title}
         imageSource={imageSource}
-        className='case-article-wrapper'
-        articleClassName='case-study-article'
+        className='blog-article-wrapper'
+        articleClassName='blog-study-article'
       >
         <p style={{paddingBottom: '10px'}}>
           This SEO strategy found success by gaining a stark understanding of the business

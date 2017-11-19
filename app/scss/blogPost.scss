@@ -1,0 +1,46 @@
+@import './utils/fonts.scss';
+
+.blog-article-wrapper{
+  padding-bottom: 15rem;
+  .blog-study-article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 880px;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+    .heading-02 {
+      font-family: klavika,Arial,sans-serif;
+    }
+    .content {
+      p {
+        margin-top: 0;
+        font: 400 1.8rem/1.6667 klavika, Arial, sans-serif;
+      }
+    }
+  }
+  .share-actions-wrapper {
+    .block-button.share-button {
+      border: none;
+      padding: 0 32px 2px;
+      .text {
+        color: white !important;
+      }
+      .bg {
+        background-color: white;
+      }
+      &:hover {
+        .text {
+          color: #1a1a1a !important;
+        }
+      }
+    }
+    .block-item {
+      .block-button {
+        border-color: #333
+      }
+    }
+  }
+}
