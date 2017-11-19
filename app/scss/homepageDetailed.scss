@@ -20,3 +20,19 @@
     }
   }
 }
+
+.under-construction-wrapper {
+  .masthead-item {
+    height: 680px;
+  }
+  .image-overlay-text {
+    position: absolute;
+    top: 60%;
+    white-space: pre-line;
+    left: 15%;
+    text-shadow: 6px 3px 20px #333;
+    &.heading-02 {
+      color: white;
+    }
+  }
+}

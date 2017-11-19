@@ -26,7 +26,7 @@ const data = {
     `,
   },
   copyright: {
-    title: ' Copyrighter internshipt',
+    title: ' Copyrighter internship',
     overview: `
       Rocket Brains is search of an Android developer to help build dazzling digital work.
       As a .Android developer, you help to develop some of the finest backends in Internet history. You work as part of different
