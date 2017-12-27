@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import {
   HashRouter as Router,
   Switch,
@@ -9,6 +9,7 @@ import ReactDOM from 'react-dom';
 import Blog from './lib/routes/blog';
 import About from './lib/routes/about';
 import Careers from './lib/routes/careers';
+import NotFound from './lib/routes/error';
 import Contacts from './lib/routes/contacts';
 import HomePage from './lib/routes/homepage';
 import DetailedBlogPost from './lib/routes/blog/detailed';
@@ -34,6 +35,7 @@ class ApplicationRoot extends Component {
           <Route path='/contacts' component={Contacts} />
           <Route path='/blog/:postID' component={DetailedBlogPost} />
           <Route path='/blog' component={Blog} />
+          <Route component={NotFound} />
         </Switch>
       </Router>
     )

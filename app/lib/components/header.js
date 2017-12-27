@@ -27,11 +27,11 @@ const showBottomBorderThreshold = 76  ; //px
 
 const Header = ({ scrollTop }) => (
   <header className={`main-header ${scrollTop > hideLogoThreshold ? 'logo-hidden' : ''}`}>
-  	<h1 className="main-logo mobile" href="#">
+  	<div className="main-logo mobile" href="#">
   		<div className="logo-mm">
         <SVG />
       </div>
-  	</h1>
+  	</div>
   	<nav className={`main-nav ${scrollTop > showBottomBorderThreshold ? 'sticky' : ''}`} role="navigation">
   		<div className="main-side-nav">
   			<div className="head">

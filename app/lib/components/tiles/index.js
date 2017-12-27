@@ -48,7 +48,7 @@ class Tiles extends PureComponent {
           </div>
 
           <div className="grid__background">
-              <div className="bg-image" style={{opacity: 1, transform: 'matrix(1, 0, 0, 1, 0, 0)', backgroundImage: 'url("http://cosmos.astro.caltech.edu/system/media_files/binaries/64/original/heic1313b.jpg?1458838335")'}}></div>
+              <div className="bg-image" style={{opacity: 1, transform: 'matrix(1, 0, 0, 1, 0, 0)', backgroundImage: 'url("/images/cosmos.jpg")'}}></div>
               {tileItems.map((item, idx) => (
                 <LetterTile letter={item.title.charAt(0)} key={`letterTile-${idx}`} over={!item.title ? true : over === idx} />
               ))}

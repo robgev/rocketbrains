@@ -1,0 +1,40 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/cosmos.jpg);
+  .error-description {
+    margin: 50px 0;
+    font-size: 20px;
+  }
+  .main-logo {
+    top: 30px;
+  }
+  .error-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    line-height: .75em;
+    font-family: klavika, Arial, sans-serif;
+    font-weight: 900;
+    font-size: 15em;
+  }
+  .zero-image {
+    height: 230px;
+    z-index: 1;
+  }
+  .digit {
+    &.left {
+      margin-right: -35px;
+      z-index: 2;
+      text-shadow: 6px 3px 20px #333;
+    }
+    &.right {
+      margin-left: -45px;
+    }
+  }
+}
