@@ -1,6 +1,6 @@
 @import './utils/fonts.scss';
 
-.blog-article-wrapper{
+.blog-article-wrapper {
   padding-bottom: 15rem;
   .blog-study-article {
     display: flex;
@@ -43,4 +43,17 @@
       }
     }
   }
+}
+
+.blog-tiles.component-videos-grid {
+  min-height: 64vh;
+  padding-bottom: 0;
+  .grid__background {
+    height: initial;
+  }
+}
+
+.blog-header.heading-02 {
+  padding-bottom: 28px;
+  padding-top: 28px;
 }

@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import LetterTile from './letterTile';
 import Tile from './tiles';
+import { fillArrayWithEmptyTiles } from 'utils';
 
 class Tiles extends PureComponent {
   constructor() {
@@ -17,10 +18,12 @@ class Tiles extends PureComponent {
 
   render() {
     const { over } = this.state;
-    const { tileItems } = this.props;
+    const { tileItems: items, className } = this.props;
+    const emptyTileItem = { title: '', link: ''};
+    const tileItems = fillArrayWithEmptyTiles(items, emptyTileItem);
     return (
       <div>
-        <div className="component-videos-grid">
+        <div className={`component-videos-grid ${className}`}>
           <div className="grid__foreground">
             {tileItems.map((item, idx) => (
               !item.title ? null :

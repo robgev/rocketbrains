@@ -20,7 +20,15 @@ const Contacts = () => (
       </p>
       <form className='registration-form inverted'>
         <div className='form-group big-margin-bottom'>
-          <input type='text' className='select-field' placeholder='I want to...' />
+          <select
+      			defaultValue={-1}
+            className='select-field'
+      		>
+      			<option value={-1} disabled hidden>I want to...</option>
+            <option value={0}>Work</option>
+            <option value={1}>Play</option>
+            <option value={2}>Enjoy</option>
+      		</select>
         </div>
         <div className='applicant-info big-margin-bottom'>
           <div className='form-group' style={{flex: 1}}>

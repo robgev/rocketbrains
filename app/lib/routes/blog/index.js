@@ -4,9 +4,12 @@ import Tiles from 'components/tiles';
 import data from './data';
 import { fillArrayWithEmptyTiles } from 'utils';
 
+import 'scss/blogPost.scss';
+
 const Blog = () => (
   <Layout>
-    <Tiles tileItems={data} />
+    <h1 className='heading-02 section-heading blog-header'>Blog</h1>
+    <Tiles tileItems={data} className='blog-tiles' />
   </Layout>
 );
 
