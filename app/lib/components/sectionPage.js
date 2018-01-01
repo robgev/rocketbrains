@@ -15,7 +15,7 @@ const SectionPage = ({
   withClickableButton,
 }) => (
   <div className={`view view-static ${className || ''}`} style={style}>
-    <section className='case-content about-mediamonks-main'>
+    <section className='case-content '>
       <header className='case-header'>
       	<div className='masthead-item'>
       		<figure className='image-wrapper'>
