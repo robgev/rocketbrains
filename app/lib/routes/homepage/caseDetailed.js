@@ -1,26 +1,16 @@
 import React from 'react';
 import Layout from 'components/layout';
 import Article from 'components/article';
+import { getFollowingItems } from 'utils'
 import data from './data';
 
 import 'scss/detailedCase.scss';
-
-const getFollowingItemLinks = (tileItems, currentItem) => {
-  const currentIndex = tileItems.indexOf(currentItem);
-  const { length } = tileItems;
-  const nextItemIndex = (currentIndex + 1) % length;
-  const prevItemIndex = (currentIndex - 1) > -1 ?
-    (currentIndex - 1) : (currentIndex - 1) + length;
-  const { link: nextItemLink } = tileItems[nextItemIndex];
-  const { link: prevItemLink } = tileItems[prevItemIndex];
-  return { nextItemLink, prevItemLink };
-}
 
 const DetailedCaseStudy = ({ match }) => {
   const { sectionID, itemID } = match.params;
   const { tileItems } = data[sectionID];
   const currentItem = tileItems.find(item => item.id === itemID);
-  const links = getFollowingItemLinks(tileItems, currentItem);
+  const followingItems = getFollowingItems(tileItems, currentItem);
   const { title, imageSource, alt } = currentItem;
   const placeholderData = [
     {
@@ -45,13 +35,13 @@ const DetailedCaseStudy = ({ match }) => {
       <Article
         withLinkButton
         withRouteButtons
-        routeLinks={links}
         title='The Strategy'
         buttonLink='/contacts'
         buttonText='Contact us'
         imageOverlayText={title}
         imageSource={imageSource}
         statisticsData={placeholderData}
+        followingItems={followingItems}
         className='case-article-wrapper'
         articleClassName='case-study-article'
         withStatistics={sectionID === 'digital-marketing'}

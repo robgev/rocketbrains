@@ -1,25 +1,15 @@
 import React from 'react';
 import Layout from 'components/layout';
 import Article from 'components/article';
+import { getFollowingItems } from 'utils'
 import data from './data';
 
 import 'scss/blogPost.scss';
 
-const getFollowingItemLinks = (tileItems, currentItem) => {
-  const currentIndex = tileItems.indexOf(currentItem);
-  const { length } = tileItems;
-  const nextItemIndex = (currentIndex + 1) % length;
-  const prevItemIndex = (currentIndex - 1) > -1 ?
-    (currentIndex - 1) : (currentIndex - 1) + length;
-  const { link: nextItemLink } = tileItems[nextItemIndex];
-  const { link: prevItemLink } = tileItems[prevItemIndex];
-  return { nextItemLink, prevItemLink };
-}
-
 const DetailedBlogPost = ({ match }) => {
   const { postID } = match.params;
   const currentItem = data.find(post => post.id === postID);
-  const links = getFollowingItemLinks(data, currentItem);
+  const followingItems = getFollowingItems(data, currentItem);
   const { title, imageSource, alt } = currentItem;
   return (
     <Layout>
@@ -27,9 +17,9 @@ const DetailedBlogPost = ({ match }) => {
         title={title}
         withShareActions
         withRouteButtons
-        routeLinks={links}
         buttonText='Contact us'
         imageSource={imageSource}
+        followingItems={followingItems}
         className='blog-article-wrapper'
         articleClassName='blog-study-article'
       >

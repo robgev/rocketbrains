@@ -6,19 +6,15 @@ import Statistics from './statistics';
 import ShareActions from './shareActions';
 
 class Article extends PureComponent {
+  // There are three states for over
+  // 0 - not over buttons, 1 - over prev button, 2 - over next button
   state = {
-    over: false,
+    over: 0,
   }
 
-  onMouseEnter = () => {
-    const { over } = this.state;
-    this.setState({ over: true });
-  }
-
-  onMouseLeave = () => {
-    const { over } = this.state;
-    this.setState({ over: false })
-  }
+  onNextMouseEnter = () => { this.setState({ over: 2 }); }
+  onPrevMouseEnter = () => { this.setState({ over: 1 }); }
+  onMouseLeave = () => { this.setState({ over: 0 }); }
 
   render() {
     const {
@@ -27,13 +23,13 @@ class Article extends PureComponent {
       onClick,
       children,
       className,
-      routeLinks,
       buttonText,
       buttonLink,
       imageSource,
       statisticsData,
       withStatistics,
       withLinkButton,
+      followingItems,
       articleClassName,
       imageOverlayText,
       withShareActions,
@@ -76,29 +72,37 @@ class Article extends PureComponent {
           		</figure>
           	</div>
             { withRouteButtons &&
-              <div>
+              <div className='buttons-container'>
                 <Link
                   key='button-prev'
-                  to={routeLinks.prevItemLink}
-                  onMouseEnter={this.onMouseEnter}
+                  className='slide-btn prev'
+                  to={followingItems.prevItem.link}
                   onMouseLeave={this.onMouseLeave}
-                  className={`slide-btn prev ${over ? 'button-shift-right' : ''}`}
+                  onMouseEnter={this.onPrevMouseEnter}
                 >
                   <i className='fa fa-angle-left' aria-hidden='true'></i>
                 </Link>
                 <Link
                   key='button-next'
-                  to={routeLinks.nextItemLink}
-                  onMouseEnter={this.onMouseEnter}
+                  className='slide-btn next'
+                  to={followingItems.nextItem.link}
                   onMouseLeave={this.onMouseLeave}
-                  className={`slide-btn next ${over ? 'button-shift-right' : ''}`}
+                  onMouseEnter={this.onNextMouseEnter}
                 >
                   <i className='fa fa-angle-right' aria-hidden='true'></i>
                 </Link>
+                <div className={`slider-block ${over ? 'over' : ''}`}>
+                  <span className='title'>{ over === 1 ? 'Prev' : 'Next'}</span>
+                  <span className='name'>
+                    { over === 1 ?
+                      followingItems.prevItem.title :
+                      followingItems.nextItem.title
+                    }
+                  </span>
+                </div>
               </div>
             }
           </header>
-
           <article className={`case-content-wrap case-intro ${articleClassName || ''}`}>
           	<h1 className='case-name heading-02'>{title}</h1>
           	<div className='content'>
