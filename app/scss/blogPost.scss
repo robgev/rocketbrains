@@ -1,7 +1,20 @@
 @import './utils/fonts.scss';
 
 .blog-article-wrapper {
+  * {
+    transition: all .1s ease-out;
+  }
   padding-bottom: 15rem;
+  .case-header {
+    .img-big {
+      &.over {
+        left: 49%;
+      }
+    }
+    &.over {
+      filter: opacity(0.7);
+    }
+  }
   .blog-study-article {
     display: flex;
     justify-content: center;
