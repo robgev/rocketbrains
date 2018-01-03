@@ -30,6 +30,9 @@ const Contacts = () => (
             <option value={1}>Play</option>
             <option value={2}>Enjoy</option>
       		</select>
+          <span className='custom-select-icon'>
+            Click    <span className='line'>-----------------</span>
+          </span>
         </div>
         <div className='applicant-info big-margin-bottom'>
           <div className='form-group' style={{flex: 1}}>
