@@ -6,26 +6,30 @@
   }
   padding-bottom: 15rem;
   .case-header {
-    .img-big {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .image-overlay-text {
-        position: absolute;
-        white-space: pre-line;
-        bottom: 200px;
-        text-align: center;
-        text-shadow: 6px 3px 20px #333;
-        &.heading-02 {
-          color: white;
+    .masthead-item {
+      .img-big {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-overlay-text {
+          position: absolute;
+          white-space: pre-line;
+          bottom: 200px;
+          text-align: center;
+          text-shadow: 6px 3px 20px #333;
+          &.heading-02 {
+            color: white;
+          }
+        }
+        img {
+          &.over {
+            right: 15px;
+          }
         }
       }
       &.over {
-        left: 49%;
+        filter: opacity(0.7);
       }
-    }
-    &.over {
-      filter: opacity(0.7);
     }
   }
   .case-study-article {

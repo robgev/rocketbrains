@@ -919,14 +919,15 @@
   }
   .image-wrapper {
     .img-data-wrap {
-      position: absolute;
-      left: 50%;
       background-color: white;
     }
     .img-big {
-      margin-left: -960px;
       img {
-        width: 1920px;
+        width: 100%;
+        position: absolute;
+        background-color: white;
+        top: 0;
+        right: 0;
         object-fit: cover;
       }
     }

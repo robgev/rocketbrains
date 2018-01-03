@@ -5,10 +5,14 @@
     transition: all .1s ease-out;
   }
   padding-bottom: 15rem;
-  .case-header {
-    .img-big {
-      &.over {
-        left: 49%;
+  .masthead-item {
+    .image-wrapper {
+      .img-big {
+        img.case-header-image {
+          &.over {
+            right: 15px;
+          }
+        }
       }
     }
     &.over {

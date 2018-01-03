@@ -43,13 +43,13 @@ class Article extends PureComponent {
       <div className={`view view-static ${className || ''}`} style={style}>
         <section className='case-content inverted'>
           <header className='case-header'>
-          	<div className='masthead-item'>
+          	<div className={`masthead-item ${over ? 'over' : ''}`}>
           		<figure className='image-wrapper'>
-          			<span className={`img-data-wrap img-big ${over ? 'over' : ''}`}>
+          			<span className='img-data-wrap img-big'>
                   <img
                     src={imageSource}
                     alt={`Couldn't load the image`}
-                    className={`case-header ${over ? 'over' : ''}`}
+                    className={`case-header-image ${over ? 'over' : ''}`}
                   />
                   { !imageOverlayText ? null :
                     <h1
@@ -58,21 +58,21 @@ class Article extends PureComponent {
                       {imageOverlayText}
                     </h1>
                   }
-                  { !withShareActions ? null :
-                      <div className='share-actions-wrapper'>
-                        <a className="block-button text-bordered share-button">
-                          <span className="bg"></span>
-                          <span className="text">Share</span>
-                        </a>
-                        <ShareActions
-                          twitter
-                          facebook
-                        />
-                      </div>
-                  }
                 </span>
           		</figure>
           	</div>
+            { !withShareActions ? null :
+                <div className='share-actions-wrapper'>
+                  <a className="block-button text-bordered share-button">
+                    <span className="bg"></span>
+                    <span className="text">Share</span>
+                  </a>
+                  <ShareActions
+                    twitter
+                    facebook
+                  />
+                </div>
+            }
             { withRouteButtons &&
               <div className='buttons-container'>
                 <Link
