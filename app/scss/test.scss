@@ -578,8 +578,7 @@ table {
 
 .component-videos-grid {
   width: 100%;
-  height: 0;
-  padding-bottom: 50%;
+  height: 100vh;
   position: relative;
   .grid__row {
     width: 100%;
@@ -596,7 +595,7 @@ table {
   .grid__background {
     position: absolute;
     width: 100%;
-    height: calc(100% / 1.5);
+    height: 91vh;
     z-index: 0;
     background-size: cover;
     background-position: center center;
@@ -608,7 +607,7 @@ table {
   .grid__foreground {
     position: absolute;
     width: 100%;
-    height: calc(100% / 1.5);
+    height: 91vh;
     z-index: 2;
     opacity: 1;
   }
@@ -645,7 +644,7 @@ table {
   }
   .grid__cell {
     width: calc(100% / 3);
-    height: calc(100vw / 6);
+    height: 45.5vh;
     box-sizing: border-box;
     float: left;
     position: relative;
