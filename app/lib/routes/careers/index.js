@@ -7,7 +7,7 @@ import 'scss/careers.scss';
 
 const tileItems = [
   { title: 'Android developer', link: '/careers/android'},
-  { title: 'Copyrighter internshipt', link: '/careers/copyright'},
+  { title: 'Copyrighter internship', link: '/careers/copyright'},
   { title: 'Digital designer', link: '/careers/designer'},
   { title: 'Frontend developer', link: '/careers/frontend'},
   { title: 'Illustrator', link: '/careers/illustrator'},

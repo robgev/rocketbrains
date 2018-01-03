@@ -2,7 +2,7 @@ import React from 'react';
 import 'scss/splash.scss';
 
 const Splash = () => (
-  <div className='splash-container'>
+  <section className='splash-container'>
     <div className='social'>
       <a href="https://www.facebook.com/" target="_blank" className="block-button splash-button">
         <span className="icn icon-facebook"></span>
@@ -26,7 +26,7 @@ const Splash = () => (
         </h3>
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Splash
