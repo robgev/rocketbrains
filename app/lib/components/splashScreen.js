@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollHint from './scrollHint';
 import 'scss/splash.scss';
 
 const Splash = () => (
@@ -26,6 +27,7 @@ const Splash = () => (
         </h3>
       </div>
     </div>
+    <ScrollHint />
   </section>
 );
 

@@ -7,6 +7,7 @@ const About = () => (
     <Article
       title='About'
       withLinkButton
+      scrollColor='white'
       buttonLink='/contacts'
       buttonText='Contact us'
       imageSource='/images/about.jpg'

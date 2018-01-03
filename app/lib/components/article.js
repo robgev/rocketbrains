@@ -4,6 +4,7 @@ import 'scss/article.scss';
 import 'scss/sectionPage.scss';
 import Statistics from './statistics';
 import ShareActions from './shareActions';
+import ScrollHint from './scrollHint';
 
 class Article extends PureComponent {
   // There are three states for over
@@ -25,6 +26,7 @@ class Article extends PureComponent {
       className,
       buttonText,
       buttonLink,
+      scrollColor,
       imageSource,
       statisticsData,
       withStatistics,
@@ -102,6 +104,7 @@ class Article extends PureComponent {
                 </div>
               </div>
             }
+            <ScrollHint color={scrollColor} />
           </header>
           <article className={`case-content-wrap case-intro ${articleClassName || ''}`}>
           	<h1 className='case-name heading-02'>{title}</h1>

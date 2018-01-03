@@ -8,6 +8,7 @@ const Contacts = () => (
   <Layout>
     <Article
       title='Contact us'
+      scrollColor='white'
       imageSource='/images/contacts.jpg'
       imageOverlayText={`We look forward
         to talking to you`}

@@ -1,0 +1,16 @@
+@import './utils/fonts';
+
+.scroll-hint {
+  position: absolute;
+  right: 0px;
+  top: 70vh;
+  font-family: $font_2;
+  font-size: 13px;
+  white-space: pre-wrap;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+  .line {
+    font-weight: 400;
+    letter-spacing: -3px;
+  }
+}
