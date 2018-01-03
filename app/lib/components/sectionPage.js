@@ -1,5 +1,7 @@
 import React from 'react';
 import 'scss/article.scss';
+import 'scss/sectionPage.scss';
+import ScrollHint from './scrollHint';
 
 const SectionPage = ({
   style,
@@ -17,7 +19,7 @@ const SectionPage = ({
   <div className={`view view-static ${className || ''}`} style={style}>
     <section className='case-content '>
       <header className='case-header'>
-      	<div className='masthead-item'>
+      	<div className='masthead-item' style={{ height: '70vh' }}>
       		<figure className='image-wrapper'>
       			<span className='img-data-wrap img-big'>
               <img alt={'Couldn\'t load the image'} src={imageSource} />
@@ -27,6 +29,7 @@ const SectionPage = ({
             </span>
       		</figure>
       	</div>
+        <ScrollHint top='50vh' />
       </header>
 
       <article className={`case-content-wrap case-intro ${articleClassName || ''}`}>

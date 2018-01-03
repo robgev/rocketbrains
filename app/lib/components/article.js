@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import { Link } from 'react-router-dom';
 import 'scss/article.scss';
-import 'scss/sectionPage.scss';
 import Statistics from './statistics';
 import ShareActions from './shareActions';
 import ScrollHint from './scrollHint';
