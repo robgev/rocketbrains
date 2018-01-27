@@ -1,8 +1,19 @@
 import React from 'react';
 import Layout from 'components/layout';
 import Article from 'components/article';
+import SelectField from 'components/selectField';
 
 import 'scss/contacts.scss';
+
+const menuOptions = [
+  { value: 'website', label: 'Website' },
+  { value: 'mobile_app', label: 'Mobile Application' },
+  { value: 'desktop_app', label: 'Desktop Application' },
+  { value: 'web_app', label: 'Web Application' },
+  { value: 'digital_marketing', label: 'Digital Marketing' },
+  { value: 'graphic_design', label: 'Graphic Design' },
+  { value: 'animation', label: 'Animation' },
+]
 
 const Contacts = () => (
   <Layout>
@@ -20,20 +31,11 @@ const Contacts = () => (
         below. We’ll get back to you as soon as possible.
       </p>
       <form className='registration-form inverted'>
-        <div className='form-group big-margin-bottom'>
-          <select
-      			defaultValue={-1}
-            className='select-field'
-      		>
-      			<option value={-1} disabled hidden>I want to...</option>
-            <option value={0}>Work</option>
-            <option value={1}>Play</option>
-            <option value={2}>Enjoy</option>
-      		</select>
-          <span className='custom-select-icon'>
-            Click    <span className='line'>-----------------</span>
-          </span>
-        </div>
+        <SelectField
+          placeholder="Subject"
+          className='select-field'
+          options={menuOptions}
+        />
         <div className='applicant-info big-margin-bottom'>
           <div className='form-group' style={{flex: 1}}>
             <input type='text' placeholder='Your name' />

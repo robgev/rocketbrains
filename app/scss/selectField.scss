@@ -1,0 +1,88 @@
+@import './utils/fonts.scss';
+
+.select-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 96px;
+  width: 100%;
+  margin: 6px;
+  margin-bottom: 50px;
+  font-family: $font_1;
+  font-size: 25px;
+  text-transform: uppercase;
+  border: 3px solid #1a1a1a;
+  background-color: white;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  .custom-select-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    position: absolute;
+    right: 5px;
+    top: 45%;
+    font-family: $font_2;
+    font-size: 13px;
+    white-space: pre-wrap;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    cursor: pointer;
+    .line {
+      font-weight: 400;
+      letter-spacing: -3px;
+    }
+  }
+  .Select-control {
+    height: 100%;
+    border: none;
+    outline: none;
+    .Select-multi-value-wrapper {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      .Select-placeholder, .Select-value {
+        color: black;
+        padding-left: 35px;
+        position: initial;
+      }
+      .Select-input {
+        input {
+          width: 0 !important;
+        }
+      }
+    }
+    .Select-clear-zone {
+      display: none;
+    }
+  }
+  .Select-menu-outer {
+    width: calc(100% + 6px);
+    max-height: 340px;
+    left: -3px;
+    margin-top: 3px;
+    border: 3px solid #1a1a1a;
+    border-top: none;
+    box-sizing: border-box;
+    border-radius: 0;
+    .Select-menu {
+      max-height: 100%;
+      .Select-option {
+        display: flex;
+        align-items: center;
+        border-radius: 0;
+        padding: 1px 35px;
+        &.is-focused {
+          background-color: #565656;
+          color: white;
+        }
+        &.is-selected {
+
+        }
+      }
+    }
+  }
+}
