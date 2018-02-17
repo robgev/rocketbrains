@@ -73,6 +73,9 @@ const Contacts = () => (
           <h3 className='heading-04'>Yerevan</h3>
           <p>info@rocketbrains.co    |    +1 937 723 2300</p>
         </div>
+        <a className="block-button map-button">
+          <span className="icn icon-pin"></span>
+        </a>
         <div className='bottom-text'>
           <p>{`Located just five minutes away from American University of Armenia, our office is
             where we produce the majority of our work. We’ve been here ever since 2017, growing

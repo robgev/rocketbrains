@@ -66,6 +66,31 @@
         color: white
       }
     }
+    .map-button {
+      width: 80px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      background-color: #1a1a1a;
+      border-left: 1px solid #333;
+      border-bottom: 1px solid #333;
+      transition: background-color .2s ease-out;
+      .icn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        color: #fff;
+        font-size: 28px;
+        margin: -14px 0 0 -14px;
+      }
+      &:hover {
+          background: #fff;
+          .icn {
+              color: #1a1a1a;
+          }
+      }
+    }
     .bottom-text {
       font: 400 16px/1 $font_7, Arial, sans-serif;
       p {
