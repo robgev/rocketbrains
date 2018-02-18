@@ -9,12 +9,16 @@ import mapStyles from 'assets/mapStyles.json';
 
 const ContactsMap = props => (
   <GoogleMap
-    defaultZoom={5}
+    defaultZoom={18}
     defaultOptions={{ styles: mapStyles }}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
+    defaultCenter={{ lat: 40.1925852, lng: 44.4990886 }}
   >
     <Marker
-      position={{ lat: -34.397, lng: 150.644 }}
+      icon={{
+        scaledSize: {width: 70, height: 70},
+        url: "/images/pin.svg"
+      }}
+      position={{ lat: 40.1925852, lng: 44.4990886 }}
     />
   </GoogleMap>
 );
