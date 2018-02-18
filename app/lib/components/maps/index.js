@@ -1,6 +1,8 @@
 import React from 'react';
 import {
+  Marker,
   GoogleMap,
+  withScriptjs,
   withGoogleMap,
 } from 'react-google-maps';
 import mapStyles from 'assets/mapStyles.json';
@@ -17,4 +19,4 @@ const ContactsMap = props => (
   </GoogleMap>
 );
 
-export default withGoogleMap(ContactsMap);
+export default withScriptjs(withGoogleMap(ContactsMap));
