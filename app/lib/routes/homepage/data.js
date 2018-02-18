@@ -208,6 +208,7 @@ const data = {
   'animation': {
     title: 'Animation',
     imageSource: '/images/animation.jpg',
+    videoSource: '/videos/animation/animation',
     tileItems: [
       {
         id: '',

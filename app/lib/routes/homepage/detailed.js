@@ -9,10 +9,11 @@ import data from './data';
 import 'scss/homepageDetailed.scss';
 
 const DetailedSectionInfo = ({ match }) => {
-  const { imageSource, title, tileItems } = data[match.params.sectionID];
+  const { imageSource, title, tileItems, videoSource } = data[match.params.sectionID];
   return tileItems.length ? (
       <Layout>
         <SectionPage
+          videoSource={videoSource}
           title={'Latest and Greatest'}
           imageSource={imageSource}
           className='hompage-detailed-article-wrapper'

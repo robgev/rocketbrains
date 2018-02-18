@@ -10,6 +10,7 @@ const SectionPage = ({
   children,
   className,
   buttonText,
+  videoSource,
   imageSource,
   withLinkButton,
   imageOverlayText,
@@ -22,7 +23,20 @@ const SectionPage = ({
       	<div className='masthead-item' style={{ height: '70vh' }}>
       		<figure className='image-wrapper'>
       			<span className='img-data-wrap img-big'>
-              <img alt={'Couldn\'t load the image'} src={imageSource} />
+              { videoSource ?
+                <video
+                  loop
+                  muted
+                  autoPlay
+                  playsInline
+                  poster={imageSource}
+                >
+                  <source src={`${videoSource}.webm`} type="video/webm" />
+                  <source src={`${videoSource}.mp4`} type="video/mp4" />
+                  Sorry, your browser does not support videos.
+                </video> :
+                <img alt={'Couldn\'t load the image'} src={imageSource} />
+              }
               { !imageOverlayText ? null :
                 <h1 className='case-name heading-02 image-overlay-text'>{imageOverlayText}</h1>
               }
