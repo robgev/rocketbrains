@@ -1,82 +1,17 @@
-@media screen and(max-width:960px) {
-  .heading-02 {
-    font-size: 56px;
-  }
-  .copy-03 {
-    font-size: 19px;
-    line-height: 1.7368;
-  }
-  .main-slider {
-    .items {
-      height: 398px;
+@import './colors.scss';
+@import './fonts.scss';
+
+@media screen and(max-width:374px) {
+  .main-nav {
+    .scroll-menu {
+      padding: 0 10px;
     }
-    .item .content .headline {
-      padding-right: 20px;
+    .scroll-menu-wrap {
+      padding: 0 10px;
     }
   }
-  .image-slider {
-    &.slider-640 .items .item {
-      height: 398px;
-    }
-    .items .item {
-      height: 398px;
-    }
-  }
-  .content-half {
-    float: none;
-    width: auto;
-  }
-  .masthead-item {
-    height: 90vh;
-  }
-  .component-nowebgl-videos-grid {
-    .cell__number {
-      font-size: 10px;
-    }
-    .cell__title {
-      font-size: 12px;
-      margin-top: 3px;
-    }
-  }
-  .component-videos-grid {
-    .cell__number {
-      font-size: 10px;
-    }
-    .cell__title {
-      font-size: 12px;
-      margin-top: 3px;
-    }
-  }
-  .apply-form {
-    .col-fields {
-      width: auto;
-      float: none;
-      padding-left: 60px;
-      padding-bottom: 40px;
-    }
-    .col-info {
-      width: auto;
-      float: none;
-      padding-bottom: 80px;
-    }
-    .apply-button {
-      margin-top: 0;
-    }
-    label {
-      box-sizing: border-box;
-      padding-left: 30px;
-    }
-    .field {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
-    .attach-file {
-      left: 0;
-      border-left: 0;
-    }
-  }
-  .inverted .apply-form .col-fields {
-    border-top-color: $color_alto_approx;
+  .contact-table-contact-info .contact-table-cell {
+    display: block;
   }
 }
 
@@ -223,72 +158,6 @@
   }
   .video-reels .items li:hover .video-controls {
     opacity: 1;
-  }
-}
-
-@media screen and(max-width:1120px) {
-  .preloader {
-    .heading-02 {
-      font-size: 7.4vw;
-      line-height: 1em;
-    }
-    .copy-01 {
-      line-height: 1.4em;
-    }
-  }
-  .sidenav-open .case-navigation .careers .office-select-dropdown .close-button .icon-mobile-nav {
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-8px, -8px);
-    color: $white;
-  }
-}
-
-@media screen and(max-width:374px) {
-  .main-nav {
-    .scroll-menu {
-      padding: 0 10px;
-    }
-    .scroll-menu-wrap {
-      padding: 0 10px;
-    }
-  }
-  .contact-table-contact-info .contact-table-cell {
-    display: block;
-  }
-}
-
-@media screen and(max-width:1920px) {
-  .component-videos-grid {
-    .cell__number {
-      font-size: 12px;
-    }
-    .cell__title {
-      font-size: 15px;
-    }
-  }
-}
-
-@media screen and(max-width:1481px) {
-  .component-videos-grid {
-    .cell__line {
-      height: calc(100% - 32px);
-      width: calc(100% - 16px);
-      margin: 23px 0 0 8px;
-    }
-    .grid__cell {
-      padding: 7px 9px;
-    }
-    .cell__number {
-      font-size: 11px;
-    }
-    .cell__title {
-      font-size: 13px;
-      margin-top: 5px;
-    }
   }
 }
 
@@ -494,17 +363,6 @@
   }
 }
 
-@media screen and(min-width:1920px) {
-  html {
-    height: 100%;
-  }
-  body {
-    min-height: 100%;
-    border-left: 1px solid $color_mine_shaft_approx;
-    border-right: 1px solid $color_mine_shaft_approx;
-  }
-}
-
 @media screen and(max-width:840px) {
   .main-nav {
     .toggle-menu {
@@ -514,6 +372,156 @@
     .main-menu li {
       padding-right: 0;
     }
+  }
+}
+
+@media screen and(max-width:960px) {
+  .component-videos-grid {
+    height: 140vh;
+    .grid__foreground a {
+        width: calc(100% / 2);
+    }
+    .grid__cell {
+      width: calc(100% / 2);
+    }
+    .cell__number {
+      font-size: 10px;
+    }
+    .cell__title {
+      font-size: 12px;
+      margin-top: 3px;
+    }
+  }
+  .heading-02 {
+    font-size: 56px;
+  }
+  .copy-03 {
+    font-size: 19px;
+    line-height: 1.7368;
+  }
+  .main-slider {
+    .items {
+      height: 398px;
+    }
+    .item .content .headline {
+      padding-right: 20px;
+    }
+  }
+  .image-slider {
+    &.slider-640 .items .item {
+      height: 398px;
+    }
+    .items .item {
+      height: 398px;
+    }
+  }
+  .content-half {
+    float: none;
+    width: auto;
+  }
+  .masthead-item {
+    height: 90vh;
+  }
+  .component-nowebgl-videos-grid {
+    .cell__number {
+      font-size: 10px;
+    }
+    .cell__title {
+      font-size: 12px;
+      margin-top: 3px;
+    }
+  }
+  .apply-form {
+    .col-fields {
+      width: auto;
+      float: none;
+      padding-left: 60px;
+      padding-bottom: 40px;
+    }
+    .col-info {
+      width: auto;
+      float: none;
+      padding-bottom: 80px;
+    }
+    .apply-button {
+      margin-top: 0;
+    }
+    label {
+      box-sizing: border-box;
+      padding-left: 30px;
+    }
+    .field {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .attach-file {
+      left: 0;
+      border-left: 0;
+    }
+  }
+  .inverted .apply-form .col-fields {
+    border-top-color: $color_alto_approx;
+  }
+}
+
+@media screen and(max-width:1120px) {
+  .preloader {
+    .heading-02 {
+      font-size: 7.4vw;
+      line-height: 1em;
+    }
+    .copy-01 {
+      line-height: 1.4em;
+    }
+  }
+  .sidenav-open .case-navigation .careers .office-select-dropdown .close-button .icon-mobile-nav {
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-8px, -8px);
+    color: $white;
+  }
+}
+
+@media screen and(max-width:1481px) {
+    .cell__line {
+      height: calc(100% - 32px);
+      width: calc(100% - 16px);
+      margin: 23px 0 0 8px;
+    }
+    .grid__cell {
+      padding: 7px 9px;
+    }
+    .cell__number {
+      font-size: 11px;
+    }
+    .cell__title {
+      font-size: 13px;
+      margin-top: 5px;
+    }
+  }
+
+@media screen and(max-width:1920px) {
+  .component-videos-grid {
+    .cell__number {
+      font-size: 12px;
+    }
+    .cell__title {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and(min-width:1920px) {
+  html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+    border-left: 1px solid $color_mine_shaft_approx;
+    border-right: 1px solid $color_mine_shaft_approx;
   }
 }
 

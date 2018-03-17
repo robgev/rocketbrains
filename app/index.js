@@ -19,6 +19,8 @@ import DetailedCaseStudy from './lib/routes/homepage/caseDetailed';
 
 import './scss/base.scss';
 import './scss/test.scss';
+import './scss/utils/medias.scss';
+import '../public/font/fontawesome/scss/font-awesome.scss';
 
 class ApplicationRoot extends Component {
   render() {
