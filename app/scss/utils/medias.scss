@@ -187,7 +187,7 @@
       }
       .svg-logo-mm {
         height: 114px;
-        width: 70px;
+        width: 190px;
         fill: $white;
         margin-top: -7px;
       }
@@ -215,7 +215,7 @@
     }
     .svg-logo-mm {
       height: 114px;
-      width: 70px;
+      width: 190px;
       fill: $white;
       margin-top: -7px;
     }
@@ -390,6 +390,15 @@
     .cell__title {
       font-size: 12px;
       margin-top: 3px;
+    }
+  }
+  .splash-container {
+    .company-name {
+      .small-center {
+        .name {
+          font-size: 7.5em;
+        }
+      }
     }
   }
   .heading-02 {
